@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sunanda's portfolio - Course Scheduler Design</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html"><span>S</span>unanda's portfolio</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+
+	    </div>
+	  </nav>
+	  <div class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+          <div class="col-lg-10 ftco-animate d-flex align-items-center">
+          	<div class="text text-center">
+              <h1 class="mb-3 bread">Course Scheduler Design</h1>
+              <p class="breadcrumbs"><span class="mr-2">Details of designing and implementing the <a href="https://su-goh.github.io/CourseScheduler/">course scheduler app </a></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+		
+		<section class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col ftco-animate" style="color:black;">
+            <h1 style="font-weight: bold" class="mb-2">Step 1 - Layout, Structure, Navigation</h2>
+            <p>As SPA (Single Page Application) and Web Applications gained more and more popularity, it is crucial to understand the principle of user interface layout, structure, and navigation
+              principles as we are designing the user interface.
+            </p>
+            <br>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <p class="font-weight-bold">Layout principles: </p>
+                  <ul>
+                    <li>Creating a focal point</li>
+                    <li>Following the golden ratio</li>
+                    <li>Using the rule of thirds</li>
+                    <li>Effectively using grids</li>
+                    <li>Integrating type</li>
+                    <li>Placing imagery</li>
+                    <li>Using negative space</li>
+                    <li>Grouping using gestalt theorem</li>
+                    <li>Creating visual hierachy</li>
+                    <li>exploilting visual scan patterns</li>
+                    <li>Creating contrast and emphasis</li>
+                  </ul>
+                </div>
+                <div class="col-sm">
+                  <p class="font-weight-bold">Structure princples: </p>
+                  <ul>
+                    <li>Show one thing</li>
+                    <li>Show a list of things</li>
+                    <li>Provide tools to create a thing</li>
+                    <li>Facilitate a task</li>
+                  </ul>
+                </div>
+                <div class="col-sm">
+                  <p class="font-weight-bold">Navigation principles</p>
+                  <ul>
+                    <li>Wayfinding</li>
+                    <li>Cost</li>
+                    <li>Aids</li>
+                    <li>Models</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <br>
+
+            <p>In this project, I implemented a web application for users to view and enroll in classes through data that are fetched from API in 
+              a JSON format. Using JS and React, I create the following simple application with the design shown below. Using the principles, 
+              described above, first examine and analyze our previous design</p>
+            <img style="width: 100%" class="img-fluid rounded" src="images/scheduler/Layout_6.jpg" alt="Analyze structure">
+            <img style="width: 100%" class="img-fluid rounded" src="images/scheduler/Layout_5.jpg" alt="Analyze Layout">
+            <img style="width: 100%" class="img-fluid rounded" src="images/scheduler/Layout_7.jpg" alt="Analyze structure">
+            <img style="width: 100%" class="img-fluid rounded" src="images/scheduler/Layout_8.jpg" alt="Analyze Layout">
+            <img style="width: 50%" class="img-fluid rounded" src="images/scheduler/Layout_9.png" alt="Analyze navigation">
+
+            <p>Having analyze our previous design, I have a more complete understanding of what improvements our design need
+              to make in order to improve the strucure, layout, and navigation. Primarily, I want to focus on navigation as the cost 
+              is too high and too much context switches are needed for simple actions.
+            </p>
+
+            <h4 style="font-weight: bold;">Results: </h4>
+            <img style="width: 100%" class="img-fluid rounded" src="images/scheduler/Layout_3.png" alt="Redesigned interface">
+
+            <br> <br>
+            <p>What is improved in this redesign? Let's reanalyze our design</p>
+            <img style="width: 100%" class="img-fluid rounded" src="images/scheduler/Layout_1.jpg" alt="Analyze Structure of redesigned">
+            <img style="width: 100%" class="img-fluid rounded" src="images/scheduler/Layout_2.jpg" alt="Analyze Layout of redesigned">
+
+            <br> <br>
+
+            <p>In general, the biggest improvement is the reduction in context swithces. Instead of a tabbed design, I overhauled the design to a 
+              SPA to reduce context switch required to glance through information crucial to the users.
+            </p>
+            <p>Although during the process of analyzing and improving structures, layouts, and navigation, a complete design overhaul should be avoided.
+              However, this exercise demonstrated the processes required to take to improve the strucutes, layout and navigation of web design.
+            </p>
+
+            <p class="font-weight-bold">Read my complete report <a href="docs/scheduler1.pdf">here</a></p> <br>
+
+            <h1 style="font-weight: bold" class="mb-2">Step 2 - Improving usability through heuristic evaluation</h2>
+            <p>Usability is a very important aspect of designing a good UI and UX. It helps ensure the effectiveness of and users' satisfaction with
+              the design solutions. Hueristic evaluation is one of the common usability evaluation techniques developed by Jacob Nielsen. 
+            </p>
+            <br>
+            <p class="font-weight-bold">10 Hueristic evaluation principles: </p>
+            <ul>
+              <li>Visibility of system status</li>
+              <li>Match between real world and system</li>
+              <li>User control and freedom</li>
+              <li>Consistency and standards</li>
+              <li>Error prevention</li>
+              <li>Recognition rather than recall</li>
+              <li>Flexibility and efficiency of use</li>
+              <li>Aesthetic and minimialistic design</li>
+              <li>Help users with errors</li>
+              <li>Help and documentation</li>
+            </ul>
+
+            <br>
+
+            <h5 class="font-weight-bold">1. Indentify a focus </h5>
+            <p>It is hard for designers to focus on every aspect of the application. In this part, I will be choosing certain crucial components
+              as part of the hueristic evaluation process.
+            </p> <br>
+
+            <p>a. Search bar</p> 
+            <img style="width: 100%; padding-bottom: 40px;" class="img-fluid rounded" src="images/scheduler/filter_before.png" alt="screenshot of search bar">
+            <p>b. Course accordion</p>
+            <img style="width: 100%; padding-bottom: 40px;" class="img-fluid rounded" src="images/scheduler/course_before.png" alt="screenshot of course accordion">
+            <p>c. Cart</p>
+            <img style="width: 30%; padding-bottom: 40px;" class="img-fluid rounded" src="images/scheduler/cart_before.png" alt="screenshot of course accordion">
+
+            <h5 class="font-weight-bold">2. Indentify violations</h5>
+            <p>Identify which hueristics are implemented and which are violated. The following cells are color coded based on the severity of the violations: Red, orange, yellow, green, gray.
+              While cyan is denoted as implemented in the current version of design.</p>
+
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Hueristic</th>
+                  <th scope="col">Search and Filter</th>
+                  <th scope="col">Sections Accordion</th>
+                  <th scope="col">Cart</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Visibility of system status</th>
+                  <td class="table-info">User can see changes immediately after applying filters</td>
+                  <td class="table-warning">1. No hints to notify user courses are successfully added</td>
+                  <td class="table-info">Users can see changes immediately after removing</td>
+                </tr>
+                <tr>
+                  <th scope="row">Match between real world & system</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">User control & freedom</th>
+                  <td></td>
+                  <td></td>
+                  <td class="table-warning">2. No undo button if user accidentally remove from cart.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Consistency & standards</th>
+                  <td class="table-info">Unified design language implemented across the application</td>
+                  <td class="table-info">Unified design language implemented across the application</td>
+                  <td class="table-info">Unified design language implemented across the application</td>
+                </tr>
+                <tr>
+                  <th scope="row">Error prevention</th>
+                  <td></td>
+                  <td class="table-danger">3. Still allow user to add courses that did not meet pre-req to cart</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Recognition rather than recall</th>
+                  <td class="table-success">4. Users have to retype search word every time they use the platform.</td>
+                  <td></td>
+                  <td class="table-warning">5. Courses added to card are not saved</td>
+                </tr>
+                <tr>
+                  <th scope="row">Flexibility & efficiency of use</th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Aesthetic & minimalist design</th>
+                  <td class="table-info">Minimalistic design with shadows as affordance of clickable content</td>
+                  <td class="table-info">Highlight when mouse hover over sections as affordance of clickable</td>
+                  <td class="table-info">Minimalistic design with shadows as affordance of clickable content</td>
+                </tr>
+                <tr>
+                  <th scope="row">Help users with errors</th>
+                  <td class="table-danger">6. If search result returns empty or credits go out of bound, no error message</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">Help & documentation</th>
+                  <td class="table-secondary">7. None provided, user might get confused to use platform</td>
+                  <td class="table-secondary">8. Users might get confused on their possible action</td>
+                  <td class="table-secondary">9. Users might get confused on their possible action</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br>
+            <h5 class="font-weight-bold">3. Develop Design Recommendations</h5>
+            <p>For each violations identified above, I provide one design recommendations that could be implemented.</p> 
+
+            <table class="table table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Recommendation</th>
+                  <th scope="col">Feasability</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-danger">
+                  <th scope="row">3</th>
+                  <td>Add notifications to notify users pre-req not met</td>
+                  <td>Yes</td>
+                </tr>
+                <tr class="table-danger">
+                  <th scope="row">6</th>
+                  <td>Add icons to notify users on result returning none</td>
+                  <td>Yes</td>
+                </tr>
+                <tr class="table-warning">
+                  <th scope="row">1</th>
+                  <td>Add notification to notify users courses are successfully added</td>
+                  <td>Yes</td>
+                </tr>
+                <tr class="table-warning">
+                  <th scope="row">2</th>
+                  <td>Add an undo button allowing users to revert the last changes made</td>
+                  <td>Yes</td>
+                </tr>
+                <tr class="table-warning">
+                  <th scope="row">5</th>
+                  <td>Remember choices added to cart by users</td>
+                  <td>No. Require a change in API.</td>
+                </tr>
+                <tr class="table-warning">
+                  <th scope="row">4</th>
+                  <td>Remember choice made by users on filters</td>
+                  <td>No. Require a change in API.</td>
+                </tr>
+                <tr class="table-secondary">
+                  <th scope="row">7</th>
+                  <td>Add support and documentations </td>
+                  <td>Yes</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br>
+            <h5 class="font-weight-bold">4. Implementation</h5>
+            <p>From the results above, I chose 3 of the recommendations I have suggested above to implement.</p> 
+
+            <p>1. Prompt notifications on course successfully added to the cart</p> 
+            <img style="width: 30%; padding-bottom: 40px;" class="img-fluid rounded" src="images/scheduler/AddedToCart.png" alt="screenshot of notification on success added to cart">
+            <p>b. Prompt notifications when user added a course in which they did not meet the pre-requisites required</p>
+            <img style="width: 30%; padding-bottom: 40px;" class="img-fluid rounded" src="images/scheduler/PrereqNotMet.png" alt="screenshot of notification when pre-req not met">
+            <p>c. Error message to notify users on no course associated with the search results</p>
+            <img style="width: 50%; padding-bottom: 40px;" class="img-fluid rounded" src="images/scheduler/NoFound.png" alt="screenshot of error message on no result return">
+
+            <p>
+              Through this process, my design has become more user friendly. The user can now understand more on what has happened – Notifications to notify 
+              users when a course is added to the cart and when users added a course that they did not meet pre-req of to the cart. 
+              An error message was also shown on screen when users’ filter yield no results. With this it might be less confusing for 
+              novice users to navigate around the user interface to perform the task they intended. Overall, it allowed the user to better 
+              understand their actions and what can and cannot be done. <br> <br>
+
+              I found out that the heuristic approach really guided me to finding ways to improve on my design. Sure some of the choices 
+              make sense during implementation, like sections numbers from the API, but these guides create a comprehensive outlook for 
+              system designers to make sure they are no blind spot that they might have missed. <br> <br>
+
+              Alerting the users was something I figured out when testing my website on previous project (i.e. improve design by thinking 
+              out loud). For the things that I did not implement but made suggestions above, things like add color to prompt users what 
+              are added and what are not are also blind spots that I missed.
+            </p>
+            <br>
+            <p class="font-weight-bold">Read my complete report <a href="docs/scheduler2.pdf">here</a></p>
+            
+            <br>
+            <h2 class="mb-3 mt-5">Feel free to contact me for inquiries</h2>
+            <p>You can contact me at sgoh4@wisc.edu</p>
+
+        </div>
+      </div>
+    </section> <!-- .section -->  
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
