@@ -1,61 +1,63 @@
-let cardElement;
-let prevRatio = 0.0;
-let increasingSize = "translate3d(0px, ratio-translate, 0px) scale3d(ratio-scale, ratio-scale, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
-let decreasingSize = "translate3d(0px, ratio-translate, 0px) scale3d(ratio-scale, ratio-scale, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
+// previous card animation - shrink as scroll
 
-window.addEventListener("load", (event) => {
-    cardElement = document.getElementsByClassName("sq-card")[0];
-    createShrinkObserver();
-}, false);
+// let cardElement;
+// let prevRatio = 0.0;
+// let increasingSize = "translate3d(0px, ratio-translate, 0px) scale3d(ratio-scale, ratio-scale, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
+// let decreasingSize = "translate3d(0px, ratio-translate, 0px) scale3d(ratio-scale, ratio-scale, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)"
 
-window.addEventListener("load", (event) => {
-    cardElement = document.getElementsByClassName("sq-card")[1];
-    createShrinkObserver();
-}, false);
+// window.addEventListener("load", (event) => {
+//     cardElement = document.getElementsByClassName("sq-card")[0];
+//     createShrinkObserver();
+// }, false);
 
-window.addEventListener("load", (event) => {
-    cardElement = document.getElementsByClassName("sq-card")[2];
-    createShrinkObserver();
-}, false);
+// window.addEventListener("load", (event) => {
+//     cardElement = document.getElementsByClassName("sq-card")[1];
+//     createShrinkObserver();
+// }, false);
 
-function createShrinkObserver() {
-    let observer;
-    let options = {
-        root: null,
-        rootMargin: "100px",
-        threshold: generateThreshold()
-    };
+// window.addEventListener("load", (event) => {
+//     cardElement = document.getElementsByClassName("sq-card")[2];
+//     createShrinkObserver();
+// }, false);
 
-    observer = new IntersectionObserver(handleShrink, options);
-    observer.observe(cardElement);
-}
+// function createShrinkObserver() {
+//     let observer;
+//     let options = {
+//         root: null,
+//         rootMargin: "100px",
+//         threshold: generateThreshold()
+//     };
 
-function generateThreshold() {
-    let threshold = [];
-    let numSteps = 100;
+//     observer = new IntersectionObserver(handleShrink, options);
+//     observer.observe(cardElement);
+// }
 
-    for(let i = 0.0; i <= numSteps; i++) {
-        let ratio = i/numSteps;
-        threshold.push(ratio);
-    }
+// function generateThreshold() {
+//     let threshold = [];
+//     let numSteps = 100;
 
-    threshold.push(0.0);
-    return threshold;
-}
+//     for(let i = 0.0; i <= numSteps; i++) {
+//         let ratio = i/numSteps;
+//         threshold.push(ratio);
+//     }
 
-function handleShrink(entries, observer) {
-    entries.forEach((entry) => {
-        // if (entry.intersectionRatio > prevRatio) {
-        //     entry.target.style.transform = increasingSize.replace("ratio-translate", 0 +"vh").replaceAll("ratio-scale", Math.max(0.7, entry.intersectionRatio + 0.2));
-        // } else {
-        //     entry.target.style.transform = increasingSize.replace("ratio-translate", 0 +"vh").replaceAll("ratio-scale", Math.max(0.7, entry.intersectionRatio - 0.2));
-        // }
+//     threshold.push(0.0);
+//     return threshold;
+// }
 
-        entry.target.style.transform = increasingSize.replace("ratio-translate", (0) +"vh").replaceAll("ratio-scale", Math.max(0.7, (entry.intersectionRatio)));
+// function handleShrink(entries, observer) {
+//     entries.forEach((entry) => {
+//         // if (entry.intersectionRatio > prevRatio) {
+//         //     entry.target.style.transform = increasingSize.replace("ratio-translate", 0 +"vh").replaceAll("ratio-scale", Math.max(0.7, entry.intersectionRatio + 0.2));
+//         // } else {
+//         //     entry.target.style.transform = increasingSize.replace("ratio-translate", 0 +"vh").replaceAll("ratio-scale", Math.max(0.7, entry.intersectionRatio - 0.2));
+//         // }
 
-        prevRatio = entry.intersectionRatio;
-    });
-}
+//         entry.target.style.transform = increasingSize.replace("ratio-translate", (0) +"vh").replaceAll("ratio-scale", Math.max(0.7, (entry.intersectionRatio)));
+
+//         prevRatio = entry.intersectionRatio;
+//     });
+// }
 
 function animateIntro() {
     $.each($('.intro'), function(key, value) {

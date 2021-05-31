@@ -8,4 +8,10 @@ http://simpleicon.com/linkedin.html
 
 Email icon:
 https://visualpharm.com/assets/227/Email-595b40b65ba036ed117d10ee.svg
+
 Code
+1. Sticky card
+https://css-tricks.com/stacked-cards-with-sticky-positioning-and-a-dash-of-sass/
+
+Thumbnail mockups:
+https://www.figma.com/community/file/943569703126613720/Free-Clay-Mockups
