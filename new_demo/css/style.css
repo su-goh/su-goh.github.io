@@ -469,3 +469,76 @@ body {
     text-decoration: none;
     color: inherit;
 }
+
+.portfolio-headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.rounded-corners {
+    border-radius: 10px;
+    box-shadow: 0 0px 3px 0 rgba(0,0,0,0.2);
+}
+
+.portfolio-pic {
+    width: 100%; 
+}
+
+.portfolio-main-img {
+    width: 65%;
+}
+
+.portfolio-body {
+    margin-top: 75px;
+    margin-left: 25%;
+    margin-right: 25%;
+
+    font-size: 1.1rem;
+}
+
+.portfolio-section-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.portfolio-subtitle {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.center-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* credit: https://www.w3schools.com/howto/howto_js_scroll_indicator.asp */
+.scroll-indicator {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+  
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #04AA6D;
+    width: 0%;
+}
