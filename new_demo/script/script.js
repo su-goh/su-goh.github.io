@@ -59,6 +59,11 @@
 //     });
 // }
 
+window.onscroll = function() {
+  animateFade();
+  scrollIndicator();
+}
+
 function animateIntro() {
     $.each($('.intro'), function(key, value) {
         $(value).addClass('intro-after-fade');

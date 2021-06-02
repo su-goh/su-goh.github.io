@@ -15,3 +15,6 @@ https://css-tricks.com/stacked-cards-with-sticky-positioning-and-a-dash-of-sass/
 
 Thumbnail mockups:
 https://www.figma.com/community/file/943569703126613720/Free-Clay-Mockups
+
+Pixel mockup:
+https://www.figma.com/community/file/893312263831409889/Pixel-5-Real-Mockup

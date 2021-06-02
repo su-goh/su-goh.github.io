@@ -490,6 +490,7 @@ body {
 
 .portfolio-pic {
     width: 100%; 
+    max-width: 100%;
 }
 
 .portfolio-main-img {
@@ -541,4 +542,10 @@ body {
     height: 8px;
     background: #04AA6D;
     width: 0%;
+}
+
+.row-pics {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
