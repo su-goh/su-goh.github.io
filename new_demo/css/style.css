@@ -382,22 +382,38 @@ body {
     color: white;
     box-shadow: 0 0px 3px 0 rgba(0,0,0,0.2);
 
+    display: flex;
     flex-direction: row;
     align-items: center;
 
-    border-color: white;
+    border-color: transparent;
     border-radius: 0px;
     border-width: 0px;
 }
 
+.project-card-desc {
+    margin-left: 5%;
+    margin-right: 5%;
+    flex-basis: 45%;
+}
+
 .project-card-img {
-    width: 45%;
-    margin: 5%;
     border-radius: 10px;
+    width: 100%;
+}
+
+.project-card-img-div {
+    flex-basis: 55%;
+    margin: 5%;
 }
 
 .card-title {
     font-weight: bold;
+}
+
+.project-type {
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .project-bubble {
@@ -407,7 +423,7 @@ body {
     border-radius: 50px;
 
     padding: 5px 20px 5px 20px;
-    margin: 10px 10px 10px 0px;
+    margin: 0px 10px 10px 0px;
 
     font-size: .85rem;
 }
@@ -439,11 +455,6 @@ body {
 .bubble-others {
     color: pink;
     border-color: pink;
-}
-
-.project-card-desc {
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 .card-button {
@@ -485,6 +496,37 @@ body {
 #first-project-card {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+
+    #project-div {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .odd-card {
+        flex-direction: column-reverse;
+    }
+
+    .even-card {
+        flex-direction: column;
+    }
+
+    .project-card {
+        padding-bottom: 20px;
+    }
+
+    .project-card-img-div {
+        margin: 0%;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 #contact-desc {
