@@ -85,6 +85,7 @@ body {
         max-height: 0px;
         overflow: hidden;
         transition: 0.5s;
+        padding: 0px;
     }
 }
 
@@ -140,6 +141,10 @@ body {
     font-size: 4.375rem;
 }
 
+#intro-text h5 {
+    font-size: 1.5625rem;
+}
+
 .resume-button {
     background-color: rgb(36, 36, 36);
     border-color: white;
@@ -175,7 +180,11 @@ body {
     }
 
     #intro-text h1 {
-        font-size: 3rem;
+        font-size: 2rem;
+    }
+
+    #intro-text h5 {
+        font-size: 1.3rem;
     }
 }
 
@@ -371,6 +380,11 @@ body {
     transform: translate(0,0)!important;
 }
 
+#portfolio {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 #project-div {
     margin-left: 10%;
     margin-right: 10%;
@@ -500,6 +514,11 @@ body {
 
 @media only screen and (max-width: 700px) {
 
+    #portfolio {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
     #project-div {
         margin-left: 0;
         margin-right: 0;
@@ -531,7 +550,8 @@ body {
 
 #contact-desc {
     font-size: 1.5625rem;
-    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 #contact {
@@ -582,6 +602,12 @@ body {
 }
 
 @media only screen and (max-width: 700px) {
+    #contact-desc {
+        font-size: 1.3rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
     .expand-icon:hover {
         width: 30px;
         margin-left: 20px;
@@ -615,6 +641,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    margin-left: 5%;
+    margin-right: 5%;
+
+    text-align: center;
 }
 
 .portfolio-title {
@@ -710,4 +741,15 @@ body {
 
 .tags {
     color: orange;
+}
+
+@media only screen and (max-width: 700px) {
+    .portfolio-body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .portfolio-main-img {
+        width: 100%;
+    }
 }
