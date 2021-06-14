@@ -70,6 +70,21 @@ function animateIntro() {
     });
 }
 
+var menuList = document.getElementById("menu-list");
+
+window.addEventListener('click', function(event) {
+  if (menuList == null) {
+    menuList = document.getElementById("menu-list");
+    menuList.style.maxHeight = "0px";
+  }
+
+  if(menuList.style.maxHeight == "0px") {
+    menuList.style.maxHeight = "150px";
+  } else {
+    menuList.style.maxHeight = "0px";
+  }
+});
+
 
 function animateFade() {
     // https://codepen.io/shaylonh/pen/dXzpLW

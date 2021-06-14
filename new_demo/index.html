@@ -18,22 +18,15 @@
   <body onload="animateIntro()" onscroll="animateFade()">
 
 	<nav class="navbar">
-		<a class="nav-brand" href="#"><b>Sunanda's Portfolio</b></a>
+		<a href="./index.html" id="nav-logo"><b>Sunanda's Portfolio</b></a>
 
 		<div class="nav-links">
-			<ul>
-				<li>
-					<a href="#about">About Me</a>
-				</li>
-
-				<li>
-					<a href="#portfolio">Portfolio</a>
-				</li>
-
-				<li>
-					<a href="#contact">Contact</a>
-				</li>
+			<ul id="menu-list">
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
+			<img class="hbg-menu" src="./images/icons/hamburger_button_menu_icon_155296.svg">
 		</div>
 	</nav>
 
@@ -43,7 +36,7 @@
 		</div>
 		<div id="intro-text">
 			<h3><b>Hi I'm Sunanda 👋</b></h3>
-			<h1 class="gradient-text" style="font-size: 4.375rem;"><b>Building human-centric applications and experiences</b></h1>
+			<h1 class="gradient-text"><b>Building human-centric applications and experiences</b></h1>
 			<br>
 			<h5 style="font-size: 1.5625rem">A <b>Front-end developer</b> and <b>UX designer</b> studying in <b>University of Wisconsin-Madison</b>. I focus on developing front-end, user-centric interfaces through UX case studies.</h5>
 		</div>
@@ -81,20 +74,6 @@
 		</div>
 	
 		<div class="grid" id="card-grid">
-
-			<div class="info-card" id="sq-card-1">
-				<div class="info-card-title">
-					<h1 class="title-type">Education</h1>
-					<h1 class="title-headings">University of Wisconsin-Madison</h1>
-					<h1 class="title-date">September 2018 - May 2022</h1>
-				</div>
-				<div class="info-card-body">
-					<p>B.Sc <b>Computer Science</b>
-					<br>Minor in <b>Digital Studies</b> <br>
-					Dean's List (2018-2021)</p>
-				</div>
-			</div>
-
 			<!-- <div class="sq-card" id="sq-card-1">
 				<div class="card-wrapper d-flex justify-content-center align-items-center flex-column">
 					<img src="https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ede91b4f99dde7538ca3f62_mission.svg" alt="" class="card-logo">
@@ -110,30 +89,7 @@
 				</div>
 			</div> -->
 
-			
-			<div class="info-card" id="sq-card-2">
-				<div class="info-card-title">
-					<h1 class="title-type">Experiences | Internship</h1>
-					<h1 class="title-headings">Expedia Group | SDE Intern</h1>
-					<h1 class="title-date">May 2021 - August 2021</h1>
-				</div>
-				<div class="info-card-body">
-					<p><b>To be added after internship concludes.</b></p>
-				</div>
-			</div>
-
-			<div class="info-card" id="sq-card-3">
-				<div class="info-card-title">
-					<h1 class="title-type">Experiences | Part-time</h1>
-					<h1 class="title-headings">University of Wisconsin-Madison | Peer Mentor</h1>
-					<h1 class="title-date">Jan 2021 - May 2021</h1>
-				</div>
-				<div class="info-card-body">
-					<p>Work with professors and teaching assistants in assisting students on understanding course concepts and provide aid to students’ work.</p>
-				</div>
-			</div>
-			
-			<!-- <div class="sq-card" id="sq-card-2">
+						<!-- <div class="sq-card" id="sq-card-2">
 				<div class="card-wrapper d-flex justify-content-center align-items-center flex-column">
 					<img src="https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ede91b4f99dde7538ca3f62_mission.svg" alt="" class="card-logo">
 					<h1><b>Expedia Group | SDE Intern</b></h1>
@@ -159,6 +115,43 @@
 					<p>B.Sc. Computer Science <br> Minor/Certificate in Digital Studies</p>
 				</div>
 			</div> -->
+
+			<div class="info-card" id="sq-card-1">
+				<div class="info-card-title">
+					<h1 class="title-type">Education</h1>
+					<h1 class="title-headings">University of Wisconsin-Madison</h1>
+					<h1 class="title-date">September 2018 - May 2022</h1>
+				</div>
+				<div class="info-card-body">
+					<p>B.Sc <b>Computer Science</b>
+					<br>Minor in <b>Digital Studies</b> <br>
+					Dean's List (2018-2021)</p>
+				</div>
+			</div>
+			
+			<div class="info-card" id="sq-card-2">
+				<div class="info-card-title">
+					<h1 class="title-type">Experiences | Internship</h1>
+					<h1 class="title-headings">Expedia Group</h1>
+					<h1 class="title-role">SDE Intern</h1>
+					<h1 class="title-date">May 2021 - August 2021</h1>
+				</div>
+				<div class="info-card-body">
+					<p><b>To be added after internship concludes.</b></p>
+				</div>
+			</div>
+
+			<div class="info-card" id="sq-card-3">
+				<div class="info-card-title">
+					<h1 class="title-type">Experiences | Part-time</h1>
+					<h1 class="title-headings">University of Wisconsin-Madison</h1>
+					<h1 class="title-role">Peer Mentor</h1>
+					<h1 class="title-date">Jan 2021 - May 2021</h1>
+				</div>
+				<div class="info-card-body">
+					<p>Work with professors and teaching assistants in assisting students on understanding course concepts and provide aid to students’ work.</p>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -249,7 +242,7 @@
 	</div>
 
 	<div class="section-header" id="contact">
-		<h1 class="fade">Connect with me! 👋👋👋</h1>
+		<h1 class="fade">Connect with me!<br>👋👋👋</h1>
 		<br>
 		<div class="d-flex align-items-center justify-content-center">
 			<h5 id="contact-desc">Open to any job and collaboration opportunies, or even a coffee chat! Feel free to connect with me with any of the options below.</h5>		
