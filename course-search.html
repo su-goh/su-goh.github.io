@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Course Search Mockup - Sunanda</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+	
+  </head>
+
+  <body>
+	<nav class="navbar">
+		<a href="./index.html" id="nav-logo"><b>Sunanda's Portfolio</b></a>
+
+		<div class="nav-links">
+			<ul id="menu-list">
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<img class="hbg-menu" src="./images/icons/hamburger_button_menu_icon_155296.svg">
+		</div>
+	</nav>
+
+	<div class="scroll-indicator">
+		<div class="progress-container">
+		  <div class="progress-bar" id="myBar"></div>
+		</div>
+	</div>
+
+    <div class="portfolio-headings">
+        <h1 class="portfolio-title">Course Search Mockup</h1>
+		<h5 style="margin-bottom: 50px">Designing and implementing a course search web application (empirical based)</h5>
+        <img class="rounded-corners portfolio-main-img" src="images/search_thumbnail.png">
+	</div>
+
+	<div class="portfolio-body">
+		<h2 class="portfolio-section-title">Overview</h2>
+		<p>The goal of this project is to <b>learn React.JS</b> and <b>apply UX theories</b> to create an interface with fairly good usability. 
+		My role is to fetch the data from the API provided and dynamically generate React components. Besides, I learned conventional layout structures
+		to design the preliminary version of the application. I later employed <b>Hueristic Evaluation</b> to improve the usability of the application.
+		This article will focus on the UX design aspect of the project.</p>
+
+		<p>The final version of the application can be accessed <a href="https://su-goh.github.io/CourseScheduler/" target="_blank">here</a>.</p> 
+
+		<h2 class="portfolio-section-title">Preliminary design</h2>
+		<p>The preliminary design was created while coding the React components of the web app. This design is meant to be temporary and was expected to be changed
+			once the engineering aspect of the website is completed.
+		</p>
+		<p>
+			I analyzed the structural and naviagational layout of the preliminary design to gain a further understanding of my design, and how the design can be further
+			improved.
+		</p>
+
+		<img class="portfolio-pic" style="margin-bottom: 50px" src="images/scheduler/Layout_6.jpg" alt="Analyze structure">
+		<img class="portfolio-pic" style="margin-bottom: 50px" src="images/scheduler/Layout_5.jpg" alt="Analyze Layout">
+		<img class="portfolio-pic" style="margin-bottom: 50px" src="images/scheduler/Layout_7.jpg" alt="Analyze structure">
+		<img class="portfolio-pic" style="margin-bottom: 50px" src="images/scheduler/Layout_8.jpg" alt="Analyze Layout">
+		
+		<h5 style="font-weight: bold;">The navigational structural identified:</h5>
+		<div class="center-img">
+			<img class="portfolio-pic" style="margin-bottom: 50px; width: 60%;" src="images/scheduler/Layout_9.png" alt="Analyze navigation">
+		</div>		
+
+		
+		<h4 style="font-weight: bold;">The results: </h4>
+		<img class="rounded-corners portfolio-pic" src="images/search-resize.png" alt="Redesigned interface">
+
+		<br> <br>
+		<p>The screenshot above is a high fidelity mock up using <b>Adobe XD</b>.</p>
+		<p>What is improved in this redesign? Let's reanalyze our design</p>
+		<div class="center-img">
+			<img class="portfolio-pic" style="width: 140%;" src="images/scheduler/Layout_1.jpg" alt="Analyze Structure of redesigned">
+		</div>
+		<br> <br>
+		<div class="center-img">
+			<img class="portfolio-pic" style="width: 140%;" src="images/scheduler/Layout_2.jpg" alt="Analyze Layout of redesigned">
+		</div>
+
+		<br> <br>
+
+		<p>The biggest improvement is the reduction in context switches. Instead of a tabbed design, I overhauled the design to a 
+			SPA to <b>reduce context switch</b> required to glance through information crucial to the users.
+		</p>
+
+		<p>I proceed to implementing the design change on React before the next iteration design phase.</p>
+
+		<h2 class="portfolio-section-title">Iteration: Improving usability through Hueristic Evaluation</h2>
+		<p>Usability is a very important aspect of UX. It helps ensure the effectiveness of and users' satisfaction of
+			the design solutions. I used Hueristic Evaluation to evaluate my design solution and offer severity ratings and 
+			design recommendations for each of the violations I have identified.
+		</p>
+		<br>
+		<!-- <p style="font-weight: bold;">10 hueristic evaluation principles: </p>
+		<ul>
+			<li>Visibility of system status</li>
+			<li>Match between real world and system</li>
+			<li>User control and freedom</li>
+			<li>Consistency and standards</li>
+			<li>Error prevention</li>
+			<li>Recognition rather than recall</li>
+			<li>Flexibility and efficiency of use</li>
+			<li>Aesthetic and minimialistic design</li>
+			<li>Help users with errors</li>
+			<li>Help and documentation</li>
+		</ul> -->
+
+		<h5 class="portfolio-subtitle">1. Identify a focus</h5>
+		<p>In this part, I will be focusing the following components as part of the hueristic evaluation process.
+		</p> <br>
+
+		<p>a. Search bar</p> 
+		<img class="portfolio-pic" src="images/scheduler/filter_before.png" alt="screenshot of search bar">
+		
+		<p><br>b. Course accordion</p>
+		<img class="portfolio-pic" src="images/scheduler/course_before.png" alt="screenshot of course accordion">
+		<br>
+		<p><br>c. Cart</p>
+		<div class="center-img">
+			<img class="portfolio-pic" style="width: 30%;" src="images/scheduler/cart_before.png" alt="screenshot of course accordion">
+		</div>
+
+		<br> <br>
+
+		<h5 class="portfolio-subtitle">2. Identify violations</h5>
+		<p>I evaluate each components with the 10 huersitics and assign a severity rating on the scale of 0-4 (grey, green, yellow, orange, red). Cyan represents the hueristic that's
+			already present in the current implementation.
+		</p>
+
+		<table class="table table-hover">
+			<thead>
+			<tr>
+				<th scope="col">Hueristic</th>
+				<th scope="col">Search and Filter</th>
+				<th scope="col">Sections Accordion</th>
+				<th scope="col">Cart</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<th scope="row">Visibility of system status</th>
+				<td class="table-info">User can see changes immediately after applying filters</td>
+				<td class="table-warning">1. No hints to notify user courses are successfully added</td>
+				<td class="table-info">Users can see changes immediately after removing</td>
+			</tr>
+			<tr>
+				<th scope="row">Match between real world & system</th>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th scope="row">User control & freedom</th>
+				<td></td>
+				<td></td>
+				<td class="table-warning">2. No undo button if user accidentally remove from cart.</td>
+			</tr>
+			<tr>
+				<th scope="row">Consistency & standards</th>
+				<td class="table-info">Unified design language implemented across the application</td>
+				<td class="table-info">Unified design language implemented across the application</td>
+				<td class="table-info">Unified design language implemented across the application</td>
+			</tr>
+			<tr>
+				<th scope="row">Error prevention</th>
+				<td></td>
+				<td class="table-danger">3. Still allow user to add courses that did not meet pre-req to cart</td>
+				<td></td>
+			</tr>
+			<tr>
+				<th scope="row">Recognition rather than recall</th>
+				<td class="table-success">4. Users have to retype search word every time they use the platform.</td>
+				<td></td>
+				<td class="table-warning">5. Courses added to card are not saved</td>
+			</tr>
+			<tr>
+				<th scope="row">Flexibility & efficiency of use</th>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th scope="row">Aesthetic & minimalist design</th>
+				<td class="table-info">Minimalistic design with shadows as affordance of clickable content</td>
+				<td class="table-info">Highlight when mouse hover over sections as affordance of clickable</td>
+				<td class="table-info">Minimalistic design with shadows as affordance of clickable content</td>
+			</tr>
+			<tr>
+				<th scope="row">Help users with errors</th>
+				<td class="table-danger">6. If search result returns empty or credits go out of bound, no error message</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th scope="row">Help & documentation</th>
+				<td class="table-secondary">7. None provided, user might get confused to use platform</td>
+				<td class="table-secondary">8. Users might get confused on their possible action</td>
+				<td class="table-secondary">9. Users might get confused on their possible action</td>
+			</tr>
+			</tbody>
+		</table>
+
+		<br>
+		<h5 class="portfolio-subtitle">3. Develop Design Recommendations</h5>
+		<p>For each violations identified above, I provide one design recommendations that could be implemented and evaluate
+			whether they are feasable to be implemented with the constraints of the API.</p> 
+
+		<table class="table table-sm">
+			<thead>
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">Recommendation</th>
+				<th scope="col">Feasability</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr class="table-danger">
+				<th scope="row">3</th>
+				<td>Add notifications to notify users pre-req not met</td>
+				<td>Yes</td>
+			</tr>
+			<tr class="table-danger">
+				<th scope="row">6</th>
+				<td>Add icons to notify users on result returning none</td>
+				<td>Yes</td>
+			</tr>
+			<tr class="table-warning">
+				<th scope="row">1</th>
+				<td>Add notification to notify users courses are successfully added</td>
+				<td>Yes</td>
+			</tr>
+			<tr class="table-warning">
+				<th scope="row">2</th>
+				<td>Add an undo button allowing users to revert the last changes made</td>
+				<td>Yes</td>
+			</tr>
+			<tr class="table-warning">
+				<th scope="row">5</th>
+				<td>Remember choices added to cart by users</td>
+				<td>No. Require a change in API.</td>
+			</tr>
+			<tr class="table-success">
+				<th scope="row">4</th>
+				<td>Remember choice made by users on filters</td>
+				<td>No. Require a change in API.</td>
+			</tr>
+			<tr class="table-secondary">
+				<th scope="row">7</th>
+				<td>Add support and documentations </td>
+				<td>Yes</td>
+			</tr>
+			</tbody>
+		</table>
+
+		<br>
+		<h5 class="portfolio-subtitle">4. Implementation</h5>
+		<p>From the results above, I chose 3 of the recommendations I have suggested above to implement.</p> 
+
+		<p>a. Prompt notifications on course successfully added to the cart</p> 
+		<div class="center-img">
+			<img class="portfolio-pic" style="width: 50%;"  src="images/scheduler/AddedToCart.png" alt="screenshot of notification on success added to cart">
+		</div>
+		<br>
+		<p>b. Prompt notifications when user added a course in which they did not meet the pre-requisites required</p>
+		<div class="center-img">
+			<img class="portfolio-pic" style="width: 50%;"  src="images/scheduler/PrereqNotMet.png" alt="screenshot of notification when pre-req not met">
+		</div>
+		<br>
+		<p>c. Error message to notify users on no course associated with the search results</p>
+		<div class="center-img">
+			<img class="portfolio-pic rounded-corners" style="width: 100%;" src="images/scheduler/NoFound.png" alt="screenshot of error message on no result return">
+		</div>
+		<h2 class="portfolio-section-title">Conclusion & Reflections</h2>
+
+		<p>
+			Through this process, my design has become more user friendly. The user can now understand more on what has happened – <b>Notifications</b> to notify 
+			users when a course is added to the cart and when users added a course that they did not meet pre-req of to the cart. 
+			An <b>error message</b> is also shown on screen when users’ filter yield no results. With this it might be less confusing for 
+			novice users to navigate around the user interface to perform the task they intended. Overall, it allowed the user to better 
+			understand their actions and what can and cannot be done.
+
+			<br><br>
+
+			I found out that the hueristic approach really guided me to finding ways to improve on my design. These guides create a comprehensive outlook for 
+			system designers to make sure they are no blind spots that they might have missed. <br> <br>
+		</p>
+
+		<p>Once again, the final version of the application can be accessed <a href="https://su-goh.github.io/CourseScheduler/" target="_blank">here</a>.</p>
+
+	</div>
+
+	<div class="section-header" id="contact">
+		<h1 class="fade">Connect with me!<br>👋👋👋</h1>
+		<br>
+		<div class="d-flex align-items-center justify-content-center">
+			<h5 id="contact-desc">Open to any job and collaboration opportunies, or even a coffee chat! Feel free to connect with me with any of the options below.</h5>		
+		</div>
+	</div>
+
+	<div class="contact-bar">
+		<div class="expand-icon">
+			<a href="mailto:sgoh4@wisc.edu" target="_blank">
+				<img class="contact-icon" src="images/icons/mail-142.svg">
+			</a>
+			<a href="mailto:sgoh4@wisc.edu" target="_blank">sgoh4@wisc.edu</a>
+		</div>
+		<div class="expand-icon">
+			<a href="https://www.linkedin.com/in/sunandagoh/" target="_blank">
+				<img class="contact-icon" src="images/icons/linkedin.svg">
+			</a>
+			<a href="https://www.linkedin.com/in/sunandagoh/" target="_blank">Sunanda Xi Yue Goh</a>
+		</div>
+		<div class="expand-icon">
+			<a href="https://github.com/su-goh" target="_blank">
+				<img class="contact-icon" src="images/icons/github-logo.svg">
+			</a>
+			<a href="mailto:sgoh4@wisc.edu" target="_blank">Github su-goh</a>
+		</div class="expand-icon">
+	</div>
+
+  </body>

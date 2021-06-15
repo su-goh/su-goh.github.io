@@ -1,0 +1,30 @@
+Font
+
+Github Icons:
+https://www.flaticon.com/free-icon/github-logo_25231
+
+LinkedIn Icons:
+http://simpleicon.com/linkedin.html
+
+Email icon:
+https://visualpharm.com/assets/227/Email-595b40b65ba036ed117d10ee.svg
+
+Hamburger menu:
+https://icon-icons.com/icon/hamburger-button-menu/155296
+
+Code
+1. Sticky card
+https://css-tricks.com/stacked-cards-with-sticky-positioning-and-a-dash-of-sass/
+
+Thumbnail mockups:
+https://www.figma.com/community/file/943569703126613720/Free-Clay-Mockups
+https://www.figma.com/community/file/839429886467621125/Minimal-Clay-Macbook-Pro-%26-Air-Mockups
+https://www.figma.com/community/file/882254519102673494/Flat-iPhone-SE%2C-7%2C-8%2C-X%2C-11%2C-12-Pro-Mockup
+https://www.figma.com/community/file/890473495927131202/Crazy-Beautiful-Complex-Gradients
+
+
+Pixel mockup:
+https://www.figma.com/community/file/893312263831409889/Pixel-5-Real-Mockup
+
+Iphone mockup:
+https://www.figma.com/community/file/973255991000130853/Free-iPhone-X-Clay-Mockup
