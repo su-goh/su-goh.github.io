@@ -64,27 +64,31 @@ window.onscroll = function() {
   scrollIndicator();
 }
 
-function animateIntro() {
-    $.each($('.intro'), function(key, value) {
-        $(value).addClass('intro-after-fade');
-    });
-}
+// function animateIntro() {
+//     $.each($('.intro'), function(key, value) {
+//         $(value).addClass('intro-after-fade');
+//     });
+// }
 
-var menuList = document.getElementById("menu-list");
+var hbgMenu = document.getElementsByClassName("hbg-menu")[0];
 
-window.addEventListener('click', function(event) {
-  if (menuList == null) {
-    menuList = document.getElementById("menu-list");
-    menuList.style.maxHeight = "0px";
-  }
+window.addEventListener('DOMContentLoaded', (e) => {
+  $.each($('.intro'), function(key, value) {
+    $(value).addClass('intro-after-fade');
+  });
 
-  if(menuList.style.maxHeight == "0px") {
-    menuList.style.maxHeight = "150px";
-  } else {
-    menuList.style.maxHeight = "0px";
-  }
-});
+  hbgMenu = document.getElementsByClassName("hbg-menu")[0];
+  menuList = document.getElementById("menu-list");
+  menuList.style.maxHeight = "0px";
 
+  hbgMenu.addEventListener('click', function (event) {
+    if (menuList.style.maxHeight == "0px") {
+      menuList.style.maxHeight = "150px";
+    } else {
+      menuList.style.maxHeight = "0px";
+    }
+  });
+})
 
 function animateFade() {
     // https://codepen.io/shaylonh/pen/dXzpLW

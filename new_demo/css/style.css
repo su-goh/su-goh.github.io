@@ -75,7 +75,7 @@ body {
 
     .hbg-menu {
         display: block;
-        height: 35px;
+        height: 30px;
     }
 
     #menu-list {
@@ -256,7 +256,6 @@ body {
 }
 
 .info-card-body {
-    position: relative;
     padding-left: 30px;
     padding-right: 10px;
     display: flex;
@@ -264,8 +263,7 @@ body {
     flex-basis: 60%;
     font-size: 1.2rem;
 
-    background-color:rgb(184, 205, 243);
-    height: 100%;
+    background-color:rgb(209, 224, 251);
     border-radius: 5px;
 }
 
