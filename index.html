@@ -6,517 +6,307 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+	
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html"><span>S</span>unanda's portfolio</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Portfolio</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section class="hero-wrap js-fullheight">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-          <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
-          	<div class="text text-center">
-          		<span class="subheading">Hey! I am</span>
-		  				<h1>Sunanda Xi Yue Goh</h1>
-			  				<h2>I'm a 
-								  <span
-								     class="txt-rotate"
-								     data-period="2000"
-								     data-rotate='["Developer.", "Creator.", "Student."]'></span>
-								</h2>
-							</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mouse">
-				<a href="#" class="mouse-icon">
-					<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+  <body onload="animateIntro()" onscroll="animateFade()">
+
+	<nav class="navbar">
+		<a href="./index.html" id="nav-logo"><b>Sunanda's Portfolio</b></a>
+
+		<div class="nav-links">
+			<ul id="menu-list">
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<img class="hbg-menu" src="./images/icons/hamburger_button_menu_icon_155296.svg">
+		</div>
+	</nav>
+
+	<div class="intro white-section d-flex align-items-center flex-column">
+		<div>
+			<img src="images/pp_colorized_bg2.png" class="img-responsive rounded-circle" id="pp" alt="Profile Picture of Sunanda">
+		</div>
+		<div id="intro-text">
+			<h3><b>Hi I'm Sunanda 👋</b></h3>
+			<h1 class="gradient-text"><b>I design human-centric applications and build front-end components</b></h1>
+			<br>
+			<h5>I'm a <b>Front-End Developer</b> and <b>UX Designer</b> studying at <b>University of Wisconsin-Madison</b>. I focus on developing front-end interfaces that put users at the center.</h5>
+		</div>
+
+		<div class="contact-bar" id="top-contact-bar">
+			<div class="expand-icon">
+				<a href="mailto:sgoh4@wisc.edu" target="_blank">
+					<img class="contact-icon" src="images/icons/mail-142.svg">
 				</a>
+				<a href="mailto:sgoh4@wisc.edu" target="_blank">sgoh4@wisc.edu</a>
 			</div>
-    </section>
+			<div class="expand-icon">
+				<a href="https://www.linkedin.com/in/sunandagoh/" target="_blank">
+					<img class="contact-icon" src="images/icons/linkedin.svg">
+				</a>
+				<a href="https://www.linkedin.com/in/sunandagoh/" target="_blank">Sunanda Xi Yue Goh</a>
+			</div>
+			<div class="expand-icon">
+				<a href="https://github.com/su-goh" target="_blank">
+					<img class="contact-icon" src="images/icons/github-logo.svg">
+				</a>
+				<a href="mailto:sgoh4@wisc.edu" target="_blank">Github su-goh</a>
+			</div class="expand-icon">
+		</div>
 
-    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-    	<div class="container">
-    		<div class="row d-flex no-gutters">
-    			<div class="col-md-6 col-lg-6 d-flex">
-    				<div class="img-about img d-flex align-items-stretch">
-    					<div class="overlay"></div>
-	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about.jpg);">
-	    				</div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-6 pl-md-5 py-5">
-    				<div class="row justify-content-start pb-3">
-		          <div class="col-md-12 heading-section ftco-animate">
-		          	<h1 class="big">About</h1>
-		            <h2 class="mb-4">About Me</h2>
-		            <p>Detailed-oriented, passionate Computer Science student seeking real world software development experiences and building connections with peers in the field.</p>
-		            <ul class="about-info mt-4 px-md-0 px-2">
-		            	<li class="d-flex"><span>Name:</span> <span>Sunanda Xi Yue Goh</span></li>
-		            	<li class="d-flex"><span>Date of birth:</span> <span>March 1, 1999</span></li>
-		            	<li class="d-flex"><span>Location:</span> <span>Madison WI</span></li>
-		            	<li class="d-flex"><span>Github:</span> <span><a href="https:www.github.com/su-goh/"> github.com/su-goh</a></span></li>
-						<li class="d-flex"><span>LinkedIn:</span> <span><a href="https://www.linkedin.com/in/sunandagoh/">linkedin.com/in/sunandagoh</a></span></li>
-		            	<li class="d-flex"><span>Email:</span> <span>sgoh4@wisc.edu</span></li>
-		            	<li class="d-flex"><span>Phone: </span> <span>+1 608 504 8110</span></li>
-		            </ul>
-		          </div>
-		        </div>
-	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
-              <div class="text">
-                <p><a href="resume.pdf" target="_blank" class="btn btn-primary py-3 px-3">Download Resume</a></p>
-              </div>
-	          </div>
-	        </div>
-        </div>
-    	</div>
-    </section>
+		<button class="resume-button d-flex justify-content-center align-items-center">
+			<a href="./sunanda_resume.pdf" target="_blank">View Resume</a>
+		</button>
 
-    <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-3">
-				    <nav id="navi">
-					    <ul>
-					      <li><a href="#page-1">Education</a></li>
-					      <li><a href="#page-2">Projects</a></li>
-						  <li><a href="#page-3">Experience</a></li>
-						  <li><a href="#page-4">Activities & <br> Leadership</a></li>
-					    </ul>
-					  </nav>
-					</div>
-					<div class="col-md-9">
-					  <div id="page-1" class= "page one">
-					  	<h2 class="heading">Education</h2>
-					    <div class="resume-wrap d-flex ftco-animate">
-					    	<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2018-2022, CGPA: 3.96</span>
-		    					<h2>B.S., Computer Science</h2>
-		    					<span class="position">University of Wisconsin-Madison</span>
-								<p>Relevant courses taken: Data Structures, Algorithms, Cryptography, User Interface, Human Computer Interactions. <br>
-								Certificate in Digital Studies and Digital Cinema Production.</p>
-	    					</div>
-	    				</div>
+	</div>
 
-					  </div>
-
-					  <div id="page-2" class= "page two">
-					  	<h2 class="heading">Projects</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-					    	<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">December 2020</span>
-								<h2>Shopping Agent</h2>
-								<span class="position">React, DialogFlow, Google Cloud Services</span>
-								<p>	-  Designed and implemented conversational agent that assist users with their shopping experience
-									through connecting DialogFlow with webhook that connects to the web API.<br>
-								</p>
-								<a href="https://www.youtube.com/watch?v=jUDPDIQWniA">View the demo here</a>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-					    	<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">November 2020</span>
-								<h2>Fitness Tracker</h2>
-								<span class="position">React Native</span>
-								<p>	- Designed and implemented a mobile application that allows users to achieve their fitness goals using React Native. <br>
-									- Designed UI and UX through paper, static, and interactive prototyping using Adobe XD. <br>
-									- Implemented accessible features that enables ease of use for people with disabilities. 
-								</p>
-								<a href="/wiscFit.html">View the design process here</a>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-					    	<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">September 2020</span>
-								<h2>Course Enroll and Recommendation</h2>
-								<span class="position">HTML, CSS, ReactJS</span>
-								<p>	- Designed and implemented a course enrollment web application using ReactJS. <br>
-									- Designed UI components through examining designing principles. <br>
-									- Enhanced user experience and usability through heuristic evaluation.
-								</p>
-								<div>
-									<a href="Scheduler.html">Read more</a> |
-									<a href="https://su-goh.github.io/CourseScheduler/">View the app</a>
-								</div>
-									
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-					    	<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-					    	<div class="text pl-3">
-		    					<span class="date">Fall 2020 - In development</span>
-		    					<h2>Message in the Bottle</h2>
-		    					<span class="position">HTML, CSS, JS, Firebase</span>
-		    					<p>	- Designed and implemented web application that focuses on mental health of users. <br>
-									- Enable users to send notes to random users that might pick up their message.
-								</p>
-								<a href="https://msgsinbottle.web.app/">View the app</a>
-		    				</div>
-						</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">Fall 2019</span>
-		    					<h2>Social Network Visualizer</h2>
-		    					<span class="position">Java, JavaFX</span>
-		    					<p> - Develop a desktop application to visualize the social connections between people in the network using Java. <br>
-									- Designed and implemented front-end interfaces using JavaFX. <br>
-									- Lead the team in employing version control workflow using Git for more centralized code review process.
-								</p>
-								<a href="./socNetVisualizer.html">Read more about this project</a>
-		    				</div>
-	    				</div>
-					  </div>
-
-					  <div id="page-3" class= "page three">
-						<h2 class="heading">Work Experience</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">June 2021 - August 2021</span>
-								<h2>Incoming Software Development Engineer Intern</h2>
-								<span class="position">Expedia Group | Seattle, Washington</span>
-								<!-- <p>Provided remote technical support over a system-wide upgrade to hundreds of
-									SME business clients, ensuring customers’ satisfaction.</p> -->
-							</div>
-						</div>
-						<!-- <div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">January 2020 - Currently employed</span>
-								<h2>Lab Attendant</h2>
-								<span class="position">College of Letters and Science (UW-Madison) | Madison, WI</span>
-								<p>Providing computer lab services, including technical services and rental inquires, to over 100 patrons daily through effective communication.</p>
-							</div>
-						</div> -->
-						<!-- <div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">March 2019 - Feburary 2020</span>
-								<h2>Team Member</h2>
-								<span class="position">University Housing (UW-Madison) | Madison, WI</span>
-								<P>Worked in a team to provide services to over 500 customers daily by taking orders and ensuring efficiency and customer satisfaction.</P>
-							</div>
-						</div> -->
-						<!-- <div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">January 2020 - January 2020</span>
-								<h2>Orientation Assistant</h2>
-								<span class="position">International Student Services (UW-Madison) | Madison, WI</span>
-								<p>- Coordinated with International Student Services to welcome thousands of
-									international students by providing guidance through cross-cultural communication. <br>
-									- Enhanced team working skills in a fluid and fast-paced environment.</p>
-							</div>
-						</div> -->
-						<!-- <div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">May 2018 - May 2018</span>
-								<h2>Technical Support</h2>
-								<span class="position">AccountSoft Enterprise | Kuching, Malaysia</span>
-								<p>Provided remote technical support over a system-wide upgrade to hundreds of
-									SME business clients, ensuring customers’ satisfaction.</p>
-							</div>
-						</div> -->
-					  </div>
-
-					  <div id="page-4" class= "page four">
-							<h2 class="heading">Activities and Leadership</h2>
-							<div class="resume-wrap d-flex ftco-animate">
-								<div class="icon d-flex align-items-center justify-content-center">
-									<span class="flaticon-ideas"></span>
-								</div>
-								<div class="text pl-3">
-									<span class="date">May 2019 - May 2020</span>
-									<h2>Event Director</h2>
-									<span class="position">Malaysian Student Association | Madison, WI</span>
-									<p>- Led events to spread awareness about the unique and diverse culture of Malaysia,
-										increasing multicultural awareness across campus. <br>
-										- Created a home-away-from-home experience by collaborating with other
-										committee leaderships to plan and execute events to bring them into success.</p>
-								</div>
-							</div>
-							<!-- <div class="resume-wrap d-flex ftco-animate">
-								<div class="icon d-flex align-items-center justify-content-center">
-									<span class="flaticon-ideas"></span>
-								</div>
-								<div class="text pl-3">
-									<span class="date">September 2018 - May 2020</span>
-									<h2>Member</h2>
-									<span class="position">Wisconsin Union Directoriate, Film | Madison, WI</span>
-									<P>- Promoting cultural awareness and diversity through showcasing contemporary films to the campus society weekly. <br>
-									- Participated in planning the themes and movies selected and in hosting.</P>
-								</div>
-							</div>
-							<div class="resume-wrap d-flex ftco-animate">
-								<div class="icon d-flex align-items-center justify-content-center">
-									<span class="flaticon-ideas"></span>
-								</div>
-								<div class="text pl-3">
-									<span class="date">January 2017 - November 2017</span>
-									<h2>Editor in Chief</h2>
-									<span class="position">Yearbook committee | Kuching, Malaysia</span>
-									<p> - Led in the redesign of the high school yearbook to a more contemporary look. <br>
-										- Collaborated with faculties and other department to ensuring the completeness of each section the book within the limited time frame. </p>
-								</div>
-							</div>
-							<div class="resume-wrap d-flex ftco-animate">
-								<div class="icon d-flex align-items-center justify-content-center">
-									<span class="flaticon-ideas"></span>
-								</div>
-								<div class="text pl-3">
-									<span class="date">January 2017 - November 2017</span>
-									<h2>Art Director</h2>
-									<span class="position">Prom Night Council | Kuching, Malaysia</span>
-									<p> Led the art department in the design aspect of the high school prom night event and invitation card design.</p>
-								</div>
-							</div>
-							<div class="resume-wrap d-flex ftco-animate">
-								<div class="icon d-flex align-items-center justify-content-center">
-									<span class="flaticon-ideas"></span>
-								</div>
-								<div class="text pl-3">
-									<span class="date">January 2015 - November 2017</span>
-									<h2>Member & Secretary	</h2>
-									<span class="position">Boy Scouts | Kuching, Malaysia</span>
-									<p> Managed logistical record, including attendance of members and track record iventory, for future meeting references.</p>
-								</div>
-							</div> -->
-					  </div>
-
-					</div>
-			  </div>
-    	</div>
-    </section>
-
-    <section class="ftco-section" id="services-section">
-    	<div class="container-fluid px-md-5">
-    		<div class="row justify-content-center">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-			<h1 class="big big-2">Portfolio</h1>
-			<h2 class="mb-4">Portfolio</h2>
-          </div>
-        </div>
-    		<div class="row">
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="Scheduler.html" class="services-1 shadow">
-						<span class="icon">
-							<i class="flaticon-ideas"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Course Scheduler</h3>
-							<p>The design process of the course scheduler app.</p>
-						</div>
-					</a>
+	<div class="blue-section">
+		<div class="section-header" id="about">
+			<h1 class="fade">A little about me</h1>
+		</div>
+	
+		<div class="grid" id="card-grid">
+			<!-- <div class="sq-card" id="sq-card-1">
+				<div class="card-wrapper d-flex justify-content-center align-items-center flex-column">
+					<img src="https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ede91b4f99dde7538ca3f62_mission.svg" alt="" class="card-logo">
+					<h1><b>Education</b></h1>
+					<p style="font-size: 1.2rem;"><b>University of Wisconsin-Madison</b></p>
+					<p>B.Sc. Computer Science <br> Minor in Digital Studies</p>
 				</div>
+			</div> -->
 
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="wiscFit.html" class="services-1 shadow">
-						<span class="icon">
-							<i class="flaticon-ideas"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">WiscFit Mobile App</h3>
-							<p>The design process of WiscFit Mobile App</p>
-						</div>
-					</a>
+			<!-- <div class="sq-card" id="sq-card-2">
+				<div class="card-wrapper d-flex justify-content-center align-items-center flex-column">
+					<h1><b>Experiences</b></h1>
 				</div>
+			</div> -->
 
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="socNetVisualizer.html" class="services-1 shadow">
-						<span class="icon">
-							<i class="flaticon-ux-design"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Social Network Visualizer</h3>
-							<p>Visualize the connections between people in a network.</p>
-						</div>
-					</a>
-				</div>
-			</div>	
-			<div class="row">
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="messageProject.html" class="services-1 shadow">
-						<span class="icon">
-							<i class="flaticon-flasks"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Message In The Bottle</h3>
-							<p>Creating a safe space for people to get things off their chest.</p>
-						</div>
-					</a>
-				</div>
-			</div>			
-    	</div>
-    </section>
-
-    <!-- <section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
-    	<div class="overlay"></div>
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>Actively seeking <br><span>internships & full-time job</span></h2>
-						<p></p>
-						<p class="mb-0"><a href="#contact-section" class="btn btn-primary py-3 px-5">Hire me</a></p>
-					</div>
+						<!-- <div class="sq-card" id="sq-card-2">
+				<div class="card-wrapper d-flex justify-content-center align-items-center flex-column">
+					<img src="https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ede91b4f99dde7538ca3f62_mission.svg" alt="" class="card-logo">
+					<h1><b>Expedia Group | SDE Intern</b></h1>
+					<p style="font-size: 1.2rem;">
+					June - August 2021 <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, optio tenetur totam laudantium, quaerat quod omnis dolor asperiores, doloremque cupiditate obcaecati? Officia, rerum voluptates? Optio perferendis ratione sunt nisi velit.</p>
 				</div>
 			</div>
-		</section> -->
+	
+			<div class="sq-card" id="sq-card-3">
+				<div class="card-wrapper d-flex justify-content-center align-items-center flex-column">
+					<img src="https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ede91b4f99dde7538ca3f62_mission.svg" alt="" class="card-logo">
+					<h1><b>Education</b></h1>
+					<p style="font-size: 1.2rem;"><b>University of Wisconsin-Madison</b></p>
+					<p>B.Sc. Computer Science <br> Minor/Certificate in Digital Studies</p>
+				</div>
+			</div>
 
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-          </div>
-        </div>
+			<div class="sq-card" id="sq-card-4">
+				<div class="card-wrapper d-flex justify-content-center align-items-center flex-column">
+					<img src="https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ede91b4f99dde7538ca3f62_mission.svg" alt="" class="card-logo">
+					<h1><b>Education</b></h1>
+					<p style="font-size: 1.2rem;"><b>University of Wisconsin-Madison</b></p>
+					<p>B.Sc. Computer Science <br> Minor/Certificate in Digital Studies</p>
+				</div>
+			</div> -->
 
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box text-center p-4 shadow">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<div>
-	          		<h3 class="mb-4">Location</h3>
-		            <p>Madison, Wisconsin</p>
-		          </div>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box text-center p-4 shadow">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<div>
-	          		<h3 class="mb-4">Contact Number</h3>
-		            <p><a href="tel://6085048110">+1 608 504 8110</a></p>
-	            </div>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box text-center p-4 shadow">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<div>
-	          		<h3 class="mb-4">Email Address</h3>
-		            <p><a href="mailto:sgoh4@wisc.edu">sgoh4@wisc.edu</a></p>
-		          </div>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box text-center p-4 shadow">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<div>
-	          		<h3 class="mb-4">GitHub</h3>
-		            <p><a href="https://www.github.com/su-goh">github.com/su-goh</a></p>
-	            </div>
-	          </div>
-          </div>
-        </div>
-		<h2 class="mb-4"><br></h2>
+			<div class="info-card" id="sq-card-1">
+				<div class="info-card-title">
+					<h1 class="title-type">Education</h1>
+					<h1 class="title-headings">University of Wisconsin-Madison</h1>
+					<h1 class="title-date">September 2018 - May 2022</h1>
+				</div>
+				<div class="info-card-body">
+					<p>B.Sc <b>Computer Science</b>
+					<br>Minor in <b>Digital Studies</b> <br>
+					Dean's List (2018-2021)</p>
+				</div>
+			</div>
+			
+			<div class="info-card" id="sq-card-2">
+				<div class="info-card-title">
+					<h1 class="title-type">Experiences | Internship</h1>
+					<h1 class="title-headings">Expedia Group</h1>
+					<h1 class="title-role">SDE Intern</h1>
+					<h1 class="title-date">May 2021 - August 2021</h1>
+				</div>
+				<div class="info-card-body">
+					<p><b>To be added after internship concludes.</b></p>
+				</div>
+			</div>
 
-    </section>
-		
+			<div class="info-card" id="sq-card-3">
+				<div class="info-card-title">
+					<h1 class="title-type">Experiences | Part-time</h1>
+					<h1 class="title-headings">University of Wisconsin-Madison</h1>
+					<h1 class="title-role">Peer Mentor</h1>
+					<h1 class="title-date">Jan 2021 - May 2021</h1>
+				</div>
+				<div class="info-card-body">
+					<p>Assist students on understanding course concepts and provide aid to students’ work.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <footer class="ftco-footer ftco-section">
-      <div class="container">
+	<div class="section-header" id="portfolio">
+		<h1 class="fade">Projects I recently worked on</h1>
+	</div>
 
-        <div class="row">
-          <div class="col-md-12 text-center">
+	<div id="project-div">
+		<div class="project-card fade-card odd-card" id="first-project-card">
+			<div class="project-card-desc card-body">
+				<h1 class="card-title">Meal Mangement App UX Case Study</h1>
+				<div class="project-type">
+					<button class="project-bubble bubble-UX">UI/UX</button>
+				</div>
+				
+				<p class="card-text">Define product roadmap through UX research techniques - <b>Cultural Probe</b> and iterate the design process through <b>Heuristic Evaluation</b> and <b>Cognitive Walkthrough</b>.</p>
+				<div class="button-container">
+					<button class="card-button d-flex justify-content-center align-items-center"  type="button" onclick="window.location.href='./eatsy.html'">
+						<a href="./eatsy.html">Read Case Study</a>
+					</button>
+				</div>
+			</div>
 
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    
-  
+			<div class="project-card-img-div">
+				<img class="project-card-img" src="images/eatsy_thumbnail.png">
+			</div>
+		</div>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+		<div class="project-card fade-card even-card">
+			<div class="project-card-img-div">
+				<img class="card-img-top project-card-img" src="images/query_thumbnail.png">
+			</div>
 
+			<div class="project-card-desc card-body">
+				<h1 class="card-title">Course Communication Web App UX Case Study</h1>
+				<div class="project-type">
+					<button class="project-bubble bubble-UX">UI/UX</button>
+				</div>
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
+				<p class="card-text">Redesign a course management web app by understanding users through <b>Contextual Inquiry</b>, build storyboards, wireframes & prototypes, and iterate the design process by performing <b>Usability Testing</b>.</p>
+
+				<div class="button-container">
+					<button class="card-button d-flex justify-content-center align-items-center" type="button" onclick="window.location.href='./query.html'">
+						<a href="./query.html">Read Case Study</a>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="project-card fade-card odd-card">
+			<div class="project-card-desc card-body">
+				<h1 class="card-title">Meal Tracking App</h1>
+				<div class="project-type">
+					<button class="project-bubble bubble-react">React Native</button>
+					<button class="project-bubble bubble-UX">UI/UX</button>
+				</div>
+				<ul class="card-text">
+					<li>Developed using <b>React Native</b> and <b>RESTful API</b> to help users track fitness goals and <b>implemented accessibility features</b> to widen its user base.</li>
+					<li>Design the UI by building paper and hi-fi prototypes using <b>Adobe XD</b>.</li>
+				</ul>
+				<div class="button-container">
+					<button class="card-button d-flex justify-content-center align-items-center" type="button" onclick="window.location.href='./fitness-tracker.html'">
+						<a href="./fitness-tracker.html">View Project</a>
+					</button>
+				</div>
+			</div>
+
+			<div class="project-card-img-div">
+				<img class="card-img-top project-card-img" src="images/wiscFit3_thumbnail.png">
+			</div>
+		</div>
+
+		<div class="project-card fade-card even-card">
+			<div class="project-card-img-div">
+				<img class="card-img-top project-card-img" src="images/bot2_thumbnail.png">
+			</div>
+
+			<div class="project-card-desc card-body">
+				<h1 class="card-title">Shopping Assistant Chatbot</h1>
+				<div class="project-type">
+					<button class="project-bubble bubble-react">React.JS</button>
+					<button class="project-bubble bubble-js">JavaScript</button>
+					<button class="project-bubble bubble-others">DialogFlow</button>
+				</div>
+				<p class="card-text">Designed and built a build-once-deploy-all chatbot that assists shoppers using <b>DialogFlow</b>, connected to the WiscShop website through Webhook written in <b>JavaScript</b>.</p>
+
+				<div class="button-container">
+					<button class="card-button d-flex justify-content-center align-items-center" type="button" onclick="window.location.href='./shopping-bot.html'">
+						<a href="./shopping-bot.html">View Project</a>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="project-card fade-card odd-card" id="final-project-card">
+			<div class="project-card-desc card-body">
+				<h1 class="card-title">Course Search App</h1>
+				<div class="project-type">
+					<button class="project-bubble bubble-react">React.JS</button>
+					<button class="project-bubble bubble-js">JavaScript</button>
+					<button class="project-bubble bubble-UX">UI/UX</button>
+				</div>
+				<p class="card-text">Design and develop a course search mockup web app using <b>React.JS</b> and <b>RESTful API</b> and utlized <b>Heuristic Evaluation</b> to iterate the design process.</p>
+			
+				<div class="button-container">
+					<button class="card-button d-flex justify-content-center align-items-center" type="button" onclick="window.location.href='./course-search.html'">
+						<a href="./course-search.html">View Project</a>
+					</button>
+				</div>
+			</div>
+
+			<div class="project-card-img-div">
+				<img class="card-img-top project-card-img" src="images/search_thumbnail.png">
+			</div>
+		</div>
+	</div>
+
+	<div class="section-header" id="contact">
+		<h1 class="fade">Connect with me!<br>👋👋👋</h1>
+		<br>
+		<div class="d-flex align-items-center justify-content-center">
+			<h5 id="contact-desc">Open to any job and collaboration opportunies, or even a coffee chat! Feel free to connect with me with any of the options below.</h5>		
+		</div>
+	</div>
+
+	<div class="contact-bar">
+		<div class="expand-icon">
+			<a href="mailto:sgoh4@wisc.edu" target="_blank">
+				<img class="contact-icon" src="images/icons/mail-142.svg">
+			</a>
+			<a href="mailto:sgoh4@wisc.edu" target="_blank">sgoh4@wisc.edu</a>
+		</div>
+		<div class="expand-icon">
+			<a href="https://www.linkedin.com/in/sunandagoh/" target="_blank">
+				<img class="contact-icon" src="images/icons/linkedin.svg">
+			</a>
+			<a href="https://www.linkedin.com/in/sunandagoh/" target="_blank">Sunanda Xi Yue Goh</a>
+		</div>
+		<div class="expand-icon">
+			<a href="https://github.com/su-goh" target="_blank">
+				<img class="contact-icon" src="images/icons/github-logo.svg">
+			</a>
+			<a href="mailto:sgoh4@wisc.edu target="_blank"">Github su-goh</a>
+		</div class="expand-icon">
+	</div>
+
+	<nav class="footer">
+		<div class="footer-brand">
+			<p><b>Owned by Sunanda Xi Yue Goh</b></p>
+		</div>
+		<div class="footer-lic">
+			<a href="./license.html"><b>License</b></a> 
+		</div>
+	</nav>
+	   
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
 </html>
