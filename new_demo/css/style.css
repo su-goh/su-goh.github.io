@@ -544,6 +544,10 @@ body {
         align-items: center;
         justify-content: center;
     }
+
+    .card-title {
+        margin-top: 10px;
+    }
 }
 
 #contact-desc {
@@ -618,9 +622,14 @@ body {
 .footer {
     background-color: #e1ebf5;
     justify-content: space-evenly;
-    align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    
+    display: flex;
+    flex-direction: row;
+
+    flex: 1;
+    text-align: right;
 }
 
 .footer p {
@@ -661,6 +670,10 @@ body {
     width: 100%; 
 }
 
+.overflow-pic {
+    width: 140%;
+}
+
 .portfolio-main-img {
     width: 65%;
 }
@@ -671,6 +684,14 @@ body {
     margin-right: 25%;
 
     font-size: 1.1rem;
+}
+
+.portfolio-body h4 {
+    margin-top: 40px;
+}
+
+.portfolio-body h5 {
+    margin-top: 30px;
 }
 
 .portfolio-section-title {
@@ -741,13 +762,44 @@ body {
     color: orange;
 }
 
+.portfolio-section-title b {
+    color: blue;
+}
+
 @media only screen and (max-width: 700px) {
     .portfolio-body {
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 7%;
+        margin-right: 7%;
     }
 
     .portfolio-main-img {
         width: 100%;
+    }
+
+    .overflow-pic {
+        width: 100%;
+    }
+}
+
+.lic-body {
+    margin-top: 75px;
+    margin-left: 25%;
+    margin-right: 25%;
+
+    font-size: 1.1rem;
+}
+
+.lic-body h1, h2, h3, h4, h5 {
+    font-weight: bold;
+}
+
+.lic-body h3 {
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+    .lic-body {
+        margin-left: 7%;
+        margin-right: 7%;
     }
 }
