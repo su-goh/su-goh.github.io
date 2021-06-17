@@ -267,6 +267,29 @@ body {
     border-radius: 5px;
 }
 
+/* update for new look */
+.info-card {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.info-card-title {
+    flex-basis: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    padding: 50px 25px 50px 25px;
+
+    text-align: center;
+}
+
+.info-card-body {
+    flex-basis: 100%;
+    padding: 50px 25px 50px 25px;
+}
+
 @media only screen and (max-width: 700px) {
     .section-header h1 {
         font-size: 2rem;
@@ -763,7 +786,7 @@ body {
 }
 
 .portfolio-section-title b {
-    color: blue;
+    color: rgb(80, 80, 255);
 }
 
 @media only screen and (max-width: 700px) {
