@@ -224,6 +224,8 @@ body {
 
     margin-left: 10%;
     margin-right: 10%;
+
+    margin-bottom: 50px;
 }
 
 .info-card-title {
@@ -263,16 +265,24 @@ body {
     flex-basis: 60%;
     font-size: 1.2rem;
 
-    background-color:rgb(209, 224, 251);
+    background-color:rgb(216, 228, 255);
     border-radius: 5px;
+}
+
+.info-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* update for new look */
 .info-card {
     display: flex;
     flex-direction: column;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 30%;
+    margin-right: 30%;
+
+    width: 30%;
 }
 
 .info-card-title {
@@ -299,8 +309,10 @@ body {
         display: flex;
         flex-direction: column;
 
-        margin-left: 0;
-        margin-right: 0;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        position: initial;
     }
 
     .info-card-title {
@@ -362,8 +374,6 @@ body {
 #card-grid {
     grid-gap: 70px;
     grid-template-rows: max-content;
-    padding-left: 10%;
-    padding-right: 10%;
     justify-content: center;
 }
 
