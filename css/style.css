@@ -164,6 +164,12 @@ body {
     font-weight: bold;
 }
 
+.resume-button p {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
 .resume-button:hover {
     background-color: rgb(77, 77, 77);
 }
