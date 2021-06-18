@@ -465,6 +465,9 @@ body {
 .project-type {
     margin-top: 5px;
     margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
 }
 
 .project-bubble {
@@ -519,6 +522,10 @@ body {
     padding-bottom: 15px;
     padding-left: 20px;
     padding-right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-button:hover {
@@ -537,6 +544,17 @@ body {
     font-size: 1.2rem;
     text-decoration: none;
     color: white;
+}
+
+.card-button p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0;
+}
+
+.card-button:hover p {
+    color: black;
 }
 
 #final-project-card {
