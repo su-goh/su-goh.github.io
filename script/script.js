@@ -93,7 +93,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
 function animateFade() {
     // https://codepen.io/shaylonh/pen/dXzpLW
     $.each($('.fade'), function(key, value) {
-      if (isElementInViewport($(value))) {
+      if (isElementPartiallyInViewport($(value))) {
         $(value).addClass('after-fade');
       }
     });
@@ -102,7 +102,7 @@ function animateFade() {
         if (isElementPartiallyInViewport($(value))) {
             $(value).addClass('after-fade-card');
         }
-      });
+    });
 
     // $.each($('.fade-in'), function(key, value) {
     //     if (isElementInViewport($(value))) {
