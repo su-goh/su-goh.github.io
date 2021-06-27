@@ -855,9 +855,22 @@ body {
     margin-top: 50px;
 }
 
+.lic-link {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.lic-img {
+    max-width: 50%;
+}
+
 @media only screen and (max-width: 700px) {
     .lic-body {
         margin-left: 7%;
         margin-right: 7%;
+    }
+
+    .lic-img {
+        max-width: 100%;
     }
 }
