@@ -33,6 +33,7 @@ body {
     display: flex;
     justify-content: space-between;
     /* align-items: center; */ /* Changed from center */
+    align-items: baseline; /* FIX: Align items based on text baseline */
     padding-left: 10%;
     padding-right: 10%;
 }
