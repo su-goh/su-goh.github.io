@@ -32,7 +32,7 @@ body {
     margin-bottom: 3%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */ /* Changed from center */
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -98,6 +98,9 @@ body {
     .navbar {
         padding-left: 5%;
         padding-right: 5%;
+        margin-top: 15px; /* Reduced top margin for mobile */
+        margin-bottom: 20px; /* Reduced bottom margin for mobile */
+        align-items: center; /* Revert to center alignment for mobile if baseline looks odd */
     }
 
     .nav-links ul {
@@ -152,6 +155,7 @@ body {
 }
 
 .intro {
+    /* These are also Bootstrap classes: d-flex align-items-center flex-column */
     padding-left: 18%;
     padding-right: 18%;
     padding-top: 30px;
@@ -215,8 +219,11 @@ body {
 /* Responsive Intro Section */
 @media only screen and (max-width: 700px) {
     .intro, .intro-after-fade {
+        /* .intro also has d-flex flex-column align-items-center */
         padding-left: 5%;
         padding-right: 5%;
+        padding-top: 60px; /* Increased top padding for mobile */
+        justify-content: flex-start; /* Align items to the top */
     }
 
     #intro-text h1 {
@@ -764,7 +771,7 @@ body {
 .progress-container {
     width: 100%;
     height: 8px;
-    background: #ccc;
+    background: transparent;
 }
 
 .progress-bar {
