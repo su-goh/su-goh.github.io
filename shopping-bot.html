@@ -1,213 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Shopping Assistant - Sunanda</title>
-        <meta charset="utf-8">
+        <title>Shopping Assistant Chatbot - Sunanda</title> <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Project detailing the design and implementation of an AI shopping assistant chatbot using DialogFlow, React, and experience prototyping.">
         <meta name="robots" content="noindex">
 
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-        <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
 
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript" src="script/script.js"></script>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPZRY4D8M0"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-YPZRY4D8M0');
         </script>
     </head>
 
     <body>
-        <nav class="navbar">
-            <a href="./index.html" id="nav-logo"><b>Sunanda's Portfolio</b></a>
-    
-            <div class="nav-links">
-                <ul id="menu-list">
-                    <li><a href="./index.html#about">About Me</a></li>
-                    <li><a href="./index.html#portfolio">Portfolio</a></li>
-                    <li><a href="./index.html#contact">Contact</a></li>
-                </ul>
-                <img class="hbg-menu" src="./images/icons/hamburger_button_menu_icon_155296.svg">
-            </div>
-        </nav>
+        <header>
+            <nav class="navbar">
+                <a href="./index.html" id="nav-logo"><b>Sunanda's Portfolio</b></a>
+                <div class="nav-links">
+                    <button class="hbg-menu" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="menu-list">
+                        <img src="./images/icons/hamburger_button_menu_icon_155296.svg" alt="Menu" aria-hidden="true">
+                    </button>
+                    <ul id="menu-list">
+                        <li><a href="./index.html#about">About Me</a></li>
+                        <li><a href="./index.html#portfolio">Portfolio</a></li>
+                        <li><a href="./index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
         <div class="scroll-indicator">
             <div class="progress-container">
               <div class="progress-bar" id="myBar"></div>
             </div>
         </div>
-    
-        <div class="portfolio-headings">
-            <h1 class="portfolio-title">Shopping Assistant</h1>
-            <h5 style="margin-bottom: 50px">Designing and building a chat bot experience for shoppers</h5>
-            <img class="rounded-corners portfolio-main-img" src="images/bot2_thumbnail.png">
-        </div>
 
-        
-    <div class="portfolio-body">
-        <h2 class="portfolio-section-title"><b>01/</b> Overview</h2>
-        <p>As Natural Language Processing (NLP) gets better in recent years, there is an up trend in adopting conversational
-            agent in home devices and customer support. Traditional prototype methods are unable to be utilized in designing 
-            conversational agents since it relies on our tacit knowledge. Luckily, <b>Experience Prototype</b> seem to be 
-            a great fit to prototype chat bots. In this project, I will be using experience prototyping methods such as 
-            <b>bodystorming</b> to design a conversational agent for a clothing retail website, and implement it using 
-            <b>Google's DialogFlow</b>. After that, a simple <b>usability test</b> was performed as a practice.
-        </p>
+        <main>
+            <section aria-labelledby="page-title" class="portfolio-headings">
+                <h1 id="page-title" class="portfolio-title">Shopping Assistant</h1>
+                <h5 style="margin-bottom: 50px">Designing and building a chat bot experience for shoppers</h5>
+                <img class="rounded-corners portfolio-main-img" src="images/bot2_thumbnail.png" alt="Shopping bot interface mockup on laptop and phone screens">
+            </section>
 
-        <h2 class="portfolio-section-title"><b>02/</b> Experience Prototype - Bodystorming</h2>
-        <p>Designing a conversational interface is particularly challenging as conventional prototype methods do not work, and our understanding of
-        conversation is part of our tacit knowledge. Hence, <b>experience prototype</b> can help solve this challenge.
-        </p>
+            <div class="portfolio-body">
 
-            <h4 class="bold-text">Context</h4>
-            <p>Users interact with a conversational shopping assistant embedded within a clothing retail website.</p>
+                <section aria-labelledby="overview-heading">
+                    <h2 id="overview-heading" class="portfolio-section-title"><b>01/</b> Overview</h2>
+                    <p>As Natural Language Processing (NLP) gets better in recent years, there is an up trend in adopting conversational
+                        agent in home devices and customer support. Traditional prototype methods are unable to be utilized in designing
+                        conversational agents since it relies on our tacit knowledge. Luckily, <b>Experience Prototype</b> seem to be
+                        a great fit to prototype chat bots. In this project, I will be using experience prototyping methods such as
+                        <b>bodystorming</b> to design a conversational agent for a clothing retail website, and implement it using
+                        <b>Google's DialogFlow</b>. After that, a simple <b>usability test</b> was performed as a practice.
+                    </p>
+                </section>
 
-            <h4 class="bold-text"><br>Scenarios & Design Goals</h4>
-            <p><b>Scenario 1: Searching for items in a specific category</b> <br>
-            Return a list of best reviewed products in the category.</p>
+                <section aria-labelledby="prototype-heading">
+                    <h2 id="prototype-heading" class="portfolio-section-title"><b>02/</b> Experience Prototype - Bodystorming</h2>
+                    <p>Designing a conversational interface is particularly challenging as conventional prototype methods do not work, and our understanding of
+                    conversation is part of our tacit knowledge. Hence, <b>experience prototype</b> can help solve this challenge.
+                    </p>
 
-            <p><b>Scenario 2: View items in their cart</b> <br>
-            Inform the user about the name of the products, quantity of those products in their cart, sorted by time added.</p>
-            
-            <p><b>Scenario 3: Purchase items in cart</b> <br>
-            Confirm with user items in their cart, and proceed to checkout.</p>
+                    <h3 class="portfolio-subtitle">Context</h3> <p>Users interact with a conversational shopping assistant embedded within a clothing retail website.</p>
 
-            <p><b>Scenario 4: Searching for a specific product</b> <br>
-            Return the general information about the product such as price, availability, and ratings.</p>
+                    <h3 class="portfolio-subtitle">Scenarios & Design Goals</h3> <p><b>Scenario 1: Searching for items in a specific category</b> <br>
+                    Return a list of best reviewed products in the category.</p>
+                    <p><b>Scenario 2: View items in their cart</b> <br>
+                    Inform the user about the name of the products, quantity of those products in their cart, sorted by time added.</p>
+                    <p><b>Scenario 3: Purchase items in cart</b> <br>
+                    Confirm with user items in their cart, and proceed to checkout.</p>
+                    <p><b>Scenario 4: Searching for a specific product</b> <br>
+                    Return the general information about the product such as price, availability, and ratings.</p>
+                    <p><b>Scenario 5: Adding a product into the cart</b> <br>
+                    Add the specified product to the user's cart based on the quantity provided, and reaffirms that to the user.</p>
+                    <p><b>Scenario 6: Narrowing down a search</b> <br>
+                    Show only the products that fits the tags or filters specified by the user.</p>
+                    <p><b>Scenario 7: Inquiring about a product</b> <br>
+                    Provide the information about the product such as price, rating, and reviews to the user.</p>
+                    <p><b>Scenario 8: Navigating around the website</b> <br>
+                    Redirects to the page the user is seeking for.</p>
 
-            <p><b>Scenario 5: Adding a product into the cart</b> <br>
-            Add the specified product to the user's cart based on the quantity provided, and reaffirms that to the user.</p>
+                    <h3 class="portfolio-subtitle">Setting up environment</h3> <p>A pre-built clothing retail website was used.</p>
+                    <img class="portfolio-pic img-rounded-only" src="./images/shopping-bot/home_2.png" alt="Screenshot of the homepage of a simple clothing retail website used for bodystorming">
 
-            <p><b>Scenario 6: Narrowing down a search</b> <br>
-            Show only the products that fits the tags or filters specified by the user.</p>
+                    <h3 class="portfolio-subtitle">Acting out interaction</h3> <p>A participant was invited to act out the interactions with the environment setted up above. <b>The participant acted as a possible user</b>
+                        querying the shopping assistant with questions and commands, while <b>I acted as the conversational agent</b> replying to the queries and
+                        commands made by the participant. Each scenarios was being acted out twice two simulate different experience of the same scenario.
+                        The session was recorded and transcribed to be analyzed later.
+                    </p>
 
-            <p><b>Scenario 7: Inquiring about a product</b> <br>
-            Provide the information about the product such as price, rating, and reviews to the user.</p>
+                    <h3 class="portfolio-subtitle">Insights</h3> <p>The session with the participant was <b>transcribed</b> and the interactions are being converted to a <b>flowchart</b> based on the patterns
+                    of interactions identified.</p>
+                    <p>The flowchart of the first scenario - searching for items in a specific category is shown below.</p>
+                    <img class="portfolio-pic img-rounded-only" src="./images/shopping-bot/flowchart.png" alt="Flowchart diagram illustrating the conversation flow for searching items in a category">
+                </section>
 
-            <p><b>Scenario 8: Navigating around the website</b> <br>
-            Redirects to the page the user is seeking for.</p>
+                <section aria-labelledby="implementation-heading">
+                    <h2 id="implementation-heading" class="portfolio-section-title"><b>03/</b> Implementation</h2>
+                    <p>First, the <b>entities and intents</b> are being created based on the results of experience prototype above. For each intent, at least ten training
+                    phrases are created to train the DialogFlow AI model and at least three responses from the agent are created. For each entities, at least five examples
+                    are created.</p>
+                    <p>An example of intent, its' training phrases and response from agent: <br>
+                    <b>Intent:</b> Searching for a product <br>
+                    <b>Training phrase:</b> 'I would like to purchase the Supreme shirt.', 'Do you still have stocks for the Supreme shirt?' <br>
+                    <b>Agent response:</b> 'This is the Supreme shirt you are looking for', 'I found Supreme shirt, is this what you are looking for?'
+                    </p>
+                    <p>An example of entity: <br>
+                    <b>Entity: </b> Quantity <br>
+                    <b>Example: </b> one, 2, all, some, a few
+                    </p>
+                    <p>My responsibility is to write the <b>webhook</b> using <b>JavaScript</b> that is connected to DialogFlow. Since DialogFlow is a
+                    'build once deploy everywhere' chat-bot, it is usable on multiple platforms such as on the web, messaging applications, and even phone calls.</p>
+                    <p>A demonstration of the implementation can be viewed here:</p>
+                    <div class="center-img youtube-container">
+                        <iframe class="video"
+                                src="https://www.youtube.com/embed/jUDPDIQWniA"
+                                title="Shopping Assistant Chatbot Demonstration Video"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                </section>
 
-            <h4 class="bold-text"><br>Setting up environment</h4>
-            <p>A pre-built clothing retail website was used.</p>
-            <img class="portfolio-pic rounded-corners" src="./images/shopping-bot/home_2.png" alt="Screenshot of the homepage of a simple clothing retail website">
+                <section aria-labelledby="usability-testing-heading">
+                    <h2 id="usability-testing-heading" class="portfolio-section-title"><b>04/</b> Usability Testing</h2>
+                    <p>A "mini" usability testing was performed. The goal of the testing is to get a taste of usability testing. <b>Efficiency</b> &
+                    <b>Engagement</b> of the system are the focus of the study. The two metrics used in the usability testing is <b>time of task completion</b>
+                    and <b>SUS questionnaire</b>. A test plan is then developed with clearly defined goals, scenarios, procedures, and metrics.</p>
+                    <p>The usability testing was performed by two participants. <b>Think aloud protocol</b> was being encouraged throughout the usability test.
+                    After the test was completed, a brief interview with follow up questions were conducted.</p>
 
-            <h4 class="bold-text"><br>Acting out interaction</h4>
-            <p>A participant was invited to act out the interactions with the environment setted up above. <b>The participant acted as a possible user</b>
-                querying the shopping assistant with questions and commands, while <b>I acted as the conversational agent</b> replying to the queries and
-                commands made by the participant. Each scenarios was being acted out twice two simulate different experience of the same scenario.
-                The session was recorded and transcribed to be analyzed later.
-            </p>
+                    <h3 class="portfolio-subtitle">Two Main Findings</h3> <p><b>1.</b> Due to the constraint of the website, the website is simple enough and users tend to want to
+                    interact with web page as they feel it is quicker for a simple system, i.e. <b>agent is less efficient.</b> <br> <br>
+                    <b>2.</b> The agent is somewhat satisfying to use, but the user are <b>unaware of the capabilities and
+                    features of agent</b>, and <b>wrong intents matched confuses the user</b>, which affects the user experience.</p>
+                    <br>
 
-            <h4 class="bold-text"><br>Insights</h4>
-            <p>The session with the participant was <b>transcribed</b> and the interactions are being converted to a <b>flowchart</b> based on the patterns
-            of interactions identified.</p>
+                    <h3 class="portfolio-subtitle">Design recommendations for the next iteration</h3> <p>
+                        <b>1. Add a ‘help’ intent</b> and have the agent return actions/queries that the user might be able to take
+                        for them to better understand the capability of agent. In addition, provide a documentation or
+                        in-depth help page to see a comprehensive list of features of the agent. <br> <br>
+                        <b>2. Provide suggestions to possible actions</b> to the user while the user is asking for something. For
+                        example, when the user asks about “I want to know more about Jump Around Shirt”, after
+                        returning the results, let the user know possible queries they can take, i.e. ask about price,
+                        reviews, and add item to cart. <br> <br>
+                        <b>3. Require the user to log in</b> before using agent, even if queries that do not require log in. This
+                        provides a more comprehensive and consistent user experience to the user.
+                    </p>
+                </section>
 
-            <p>The flowchart of the first scenario - searching for items in a specific category is shown below.</p>
-            <img class="portfolio-pic" src="./images/shopping-bot/flowchart.png" alt="The flowchart of the scenario - searching for items in a specific category"> 
+                <section aria-labelledby="conclusion-heading">
+                    <h2 id="conclusion-heading" class="portfolio-section-title"><b>05/</b> Conclusion and Reflections</h2>
+                    <p>From this project, I <b>gained an understanding of the basics of experience prototyping</b> and how it can be used.
+                    Though only the simplified version of usability testing was performed, I <b>get a sense of how usability testing works and
+                    their importance</b>. Unfortunately, due to COVID-19 restrictions, the experience prototyping and usability testing has to be
+                    performed virtually. However, it works out perfectly since in the real world, users would also be interacting with the chat bot
+                    in a virtual space.</p>
+                    <p>I also got a chance to <b>learn how to build a bot using DialogFlow</b>, as well as design conventions for a conversational
+                    agent. Although the scenarios are not as complicated as most commercialized chat bots, being able to learn how to develop a
+                    chat bot without using pre-existing chat-bot builder is rewarding as the industry is still adopting the use of conversational
+                    agent to assist their customers.</p>
+                </section>
 
-        <h2 class="portfolio-section-title"><b>03/</b> Implementation</h2>
-        <p>First, the <b>entities and intents</b> are being created based on the results of experience prototype above. For each intent, at least ten training
-        phrases are created to train the DialogFlow AI model and at least three responses from the agent are created. For each entities, at least five examples
-        are created.</p>
-
-        <p>An example of intent, its' training phrases and response from agent: <br>
-        <b>Intent:</b> Searching for a product <br>
-        <b>Training phrase:</b> 'I would like to purchase the Supreme shirt.', 'Do you still have stocks for the Supreme shirt?' <br>
-        <b>Agent response:</b> 'This is the Supreme shirt you are looking for', 'I found Supreme shirt, is this what you are looking for?'
-        </p>
-
-        <p>An example of entity: <br>
-        <b>Entity: </b> Quantity <br>
-        <b>Example: </b> one, 2, all, some, a few
-        </p>
-
-        <p>My responsibility is to write the <b>webhook</b> using <b>JavaScript</b> that is connected to DialogFlow. Since DialogFlow is a 
-        'build once deploy everywhere' chat-bot, it is usable on multiple platforms such as on the web, messaging applications, and even phone calls.</p>
-        
-        <p>A demonstration of the implementation can be viewed here:</p>
-
-        <div class="center-img youtube-container">
-            <iframe class="rounded-corners video"  src="https://www.youtube.com/embed/jUDPDIQWniA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <h2 class="portfolio-section-title"><b>04/</b> Usability Testing</h2>
-        <p>A "mini" usability testing was performed. The goal of the testing is to get a taste of usability testing. <b>Efficiency</b> & 
-        <b>Engagement</b> of the system are the focus of the study. The two metrics used in the usability testing is <b>time of task completion</b>
-        and <b>SUS questionnaire</b>. A test plan is then developed with clearly defined goals, scenarios, procedures, and metrics.</p>
-
-        <p>The usability testing was performed by two participants. <b>Think aloud protocol</b> was being encouraged throughout the usability test.
-        After the test was completed, a brief interview with follow up questions were conducted.</p>
-
-        <h4><b>Two Main Findings</b></h4>
-        <!-- <p>Based on the SUS questionnaire, the shopping assistant bot receieve <b>a grade of "C"</b> (in the range of good and exellent).</p> -->
-        <p><b>1.</b> Due to the constraint of the website, the website is simple enough and users tend to want to
-        interact with web page as they feel it is quicker for a simple system, i.e. <b>agent is less efficient.</b> <br> <br>
-        <b>2.</b> The agent is somewhat satisfying to use, but the user are <b>unaware of the capabilities and
-        features of agent</b>, and <b>wrong intents matched confuses the user</b>, which affects the user experience.</p>
-        <br>
-            
-        <h4><b>Design recommendations for the next iteration</b></h4>
-        <p>
-            <b>1. Add a ‘help’ intent</b> and have the agent return actions/queries that the user might be able to take
-            for them to better understand the capability of agent. In addition, provide a documentation or
-            in-depth help page to see a comprehensive list of features of the agent. <br> <br>
-            <b>2. Provide suggestions to possible actions</b> to the user while the user is asking for something. For
-            example, when the user asks about “I want to know more about Jump Around Shirt”, after
-            returning the results, let the user know possible queries they can take, i.e. ask about price,
-            reviews, and add item to cart. <br> <br>
-            <b>3. Require the user to log in</b> before using agent, even if queries that do not require log in. This
-            provides a more comprehensive and consistent user experience to the user.
-        </p>
-
-        <h2 class="portfolio-section-title"><b>05/</b> Conclusion and Reflections</h2>
-        <p>From this project, I <b>gained an understanding of the basics of experience prototyping</b> and how it can be used.
-        Though only the simplified version of usability testing was performed, I <b>get a sense of how usability testing works and 
-        their importance</b>. Unfortunately, due to COVID-19 restrictions, the experience prototyping and usability testing has to be
-        performed virtually. However, it works out perfectly since in the real world, users would also be interacting with the chat bot
-        in a virtual space.</p>
-        
-        <p>I also got a chance to <b>learn how to build a bot using DialogFlow</b>, as well as design conventions for a conversational 
-        agent. Although the scenarios are not as complicated as most commercialized chat bots, being able to learn how to develop a
-        chat bot without using pre-existing chat-bot builder is rewarding as the industry is still adopting the use of conversational
-        agent to assist their customers.</p>
-    </div>
-
-
-    <div class="section-header" id="contact">
-		<h1 class="fade">Connect with me!<br>👋👋👋</h1>
-		<br>
-		<div class="d-flex align-items-center justify-content-center">
-			<h5 id="contact-desc">Open to any job and collaboration opportunies, or even a coffee chat! Feel free to connect with me with any of the options below.</h5>		
-		</div>
-	</div>
-
-    <div class="contact-bar">
-		<div class="expand-icon">
-			<a href="mailto:sgoh4@wisc.edu" target="_blank">
-				<img class="contact-icon" src="images/icons/mail-142.svg">
-			</a>
-			<a href="mailto:sgoh4@wisc.edu" target="_blank">sgoh4@wisc.edu</a>
-		</div>
-		<div class="expand-icon">
-			<a href="https://www.linkedin.com/in/sunandagoh/" target="_blank">
-				<img class="contact-icon" src="images/icons/linkedin.svg">
-			</a>
-			<a href="https://www.linkedin.com/in/sunandagoh/" target="_blank">Sunanda Xi Yue Goh</a>
-		</div>
-		<div class="expand-icon">
-			<a href="https://github.com/su-goh" target="_blank">
-				<img class="contact-icon" src="images/icons/github-logo.svg">
-			</a>
-			<a href="https://github.com/su-goh" target="_blank">Github su-goh</a>
-		</div class="expand-icon">
-	</div>
-
+            </div> <section class="contact-section" id="contact">
+                <div class="section-header">
+                    <h2 class="fade">Connect with me!<br>👋👋👋</h2>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p id="contact-desc">Open to any job and collaboration opportunities, or even a coffee chat! Feel free to connect with me with any of the options below.</p>
+                    </div>
+                </div>
+                <div class="contact-bar">
+                     <div class="expand-icon">
+                        <a href="mailto:sgoh4@wisc.edu" target="_blank">
+                            <img class="contact-icon" src="images/icons/mail-142.svg" alt="Email">
+                            <span class="link-text">sgoh4@wisc.edu</span>
+                        </a>
+                    </div>
+                    <div class="expand-icon">
+                        <a href="https://www.linkedin.com/in/sunandagoh/" target="_blank">
+                            <img class="contact-icon" src="images/icons/linkedin.svg" alt="LinkedIn">
+                            <span class="link-text">Sunanda Xi Yue Goh</span>
+                        </a>
+                    </div>
+                    <div class="expand-icon">
+                        <a href="https://github.com/su-goh" target="_blank">
+                            <img class="contact-icon" src="images/icons/github-logo.svg" alt="GitHub">
+                            <span class="link-text">Github su-goh</span>
+                        </a>
+                    </div>
+                </div>
+            </section> </main> <footer class="footer">
+            <div class="footer-lic">
+                <a href="https://icons8.com/" target="_blank" rel="noopener noreferrer"><b>Icons by Icons8</b></a>
+            </div>
+            <div class="footer-lic">
+                <a href="./license.html"><b>Credits</b></a>
+            </div>
+        </footer> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     </body>
+</html>

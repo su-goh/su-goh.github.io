@@ -1,307 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Collaborative Learning - Sunanda</title>
-        <meta charset="utf-8">
+        <title>Collaborative Learning UX Case Study - Sunanda</title> <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="UX case study redesigning a Piazza-like collaborative learning platform using contextual inquiry, affinity diagramming, and usability testing.">
         <meta name="robots" content="noindex">
 
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-        <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
 
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript" src="script/script.js"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPZRY4D8M0"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-YPZRY4D8M0');
         </script>
     </head>
 
     <body>
-        <nav class="navbar">
-            <a href="./index.html" id="nav-logo"><b>Sunanda's Portfolio</b></a>
-    
-            <div class="nav-links">
-                <ul id="menu-list">
-                    <li><a href="./index.html#about">About Me</a></li>
-                    <li><a href="./index.html#portfolio">Portfolio</a></li>
-                    <li><a href="./index.html#contact">Contact</a></li>
-                </ul>
-                <img class="hbg-menu" src="./images/icons/hamburger_button_menu_icon_155296.svg">
-            </div>
-        </nav>
+        <header>
+            <nav class="navbar">
+                <a href="./index.html" id="nav-logo"><b>Sunanda's Portfolio</b></a>
+                <div class="nav-links">
+                    <button class="hbg-menu" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="menu-list">
+                        <img src="./images/icons/hamburger_button_menu_icon_155296.svg" alt="Menu" aria-hidden="true">
+                    </button>
+                    <ul id="menu-list">
+                        <li><a href="./index.html#about">About Me</a></li>
+                        <li><a href="./index.html#portfolio">Portfolio</a></li>
+                        <li><a href="./index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
         <div class="scroll-indicator">
             <div class="progress-container">
               <div class="progress-bar" id="myBar"></div>
             </div>
         </div>
-    
-        <div class="portfolio-headings">
-            <h1 class="portfolio-title">Collaborative Learning Web App UX Case Study</h1>
-            <h5 style="margin-bottom: 50px">Designing an effective and satisfying collaborative learning platform for students and instructors</h5>
-            <img class="rounded-corners portfolio-main-img" src="images/query_thumbnail.png">
-        </div>
 
-        <div class="portfolio-body">
-            <h2 class="portfolio-section-title"><b>01/</b> Overview</h2>
-            <p>Course communication application that allow instructors to <b>inform students about course logistics</b>, and allow students and instructors
-            to <b>discuss course topics</b> such as Piazza has becoming more relevant especially at the times of online instruction. </p>
+        <main>
+            <section aria-labelledby="page-title" class="portfolio-headings">
+                <h1 id="page-title" class="portfolio-title">Collaborative Learning Web App UX Case Study</h1>
+                <h5 style="margin-bottom: 50px">Designing an effective and satisfying collaborative learning platform for students and instructors</h5>
+                <img class="rounded-corners portfolio-main-img" src="images/query_thumbnail.png" alt="Query app mockup showing interface on laptop and phone screens">
+            </section>
 
-            <img class="portfolio-pic rounded-corners" src="images/query/piazza.png">
+            <div class="portfolio-body">
 
-            <p>Piazza is a favorable application used by many students and instructors. However, the <b>current design implementation causes students to use it purely
-                based on their personal needs</b> rather than the good of the whole community. </p>
-            <p> In this project, we <b>aim to redesign Piazza's interaction model</b> and its' UI 
-            <b>to provide a more user-centric experience</b> for students and instructors.</p>
+                <section aria-labelledby="overview-heading">
+                    <h2 id="overview-heading" class="portfolio-section-title"><b>01/</b> Overview</h2>
+                    <p>Course communication application that allow instructors to <b>inform students about course logistics</b>, and allow students and instructors
+                    to <b>discuss course topics</b> such as Piazza has becoming more relevant especially at the times of online instruction. </p>
+                    <img class="portfolio-pic img-rounded-only" src="images/query/piazza.png" alt="Screenshot of the original Piazza interface">
+                    <p>Piazza is a favorable application used by many students and instructors. However, the <b>current design implementation causes students to use it purely
+                        based on their personal needs</b> rather than the good of the whole community. </p>
+                    <p> In this project, we <b>aim to redesign Piazza's interaction model</b> and its' UI
+                    <b>to provide a more user-centric experience</b> for students and instructors.</p>
+                    <p>This is a <b>4-week</b> group project collaborated with <b class="tags">Vera Wei</b> & <b class="tags">Katherine Fu</b>.</p>
+                </section>
 
-            <p>This is a <b>4-week</b> group project collaborated with <b class="tags">Vera Wei</b> & <b class="tags">Katherine Fu</b>.</p>
+                <section aria-labelledby="research-heading">
+                    <h2 id="research-heading" class="portfolio-section-title"><b>02/</b> Research - Contextual Inquiry</h2>
+                    <p>We chose to use the <b>Master-Apprentice model</b> of contextual inquiry allowed us to <b>be in the shoes of the user</b> in their physical context.
+                    Through contextual inquiry, we were able to <b>understand how our users complete their daily tasks</b> and <b>where frustrations or confusions happen</b>.
+                    This allowed us to understand each group of our users in-depth and build work models for each of the participants for the user research study.</p>
+                    <p>Because of the scope of the project, we were only able to conduct contextual inquiry on three research participants. To comply with the COVID-19 safety precautions,
+                    the research was conducted virtually over video conferencing tools.</p>
+                    <p>Two of our participants for the contextual inquiry were <b>teaching assistants</b>, while the other participant was a <b>student</b>.</p>
+                </section>
 
-            <h2 class="portfolio-section-title"><b>02/</b> Research - Contextual Inquiry</h2>
-            <p>We chose to use the <b>Master-Apprentice model</b> of contextual inquiry allowed us to <b>be in the shoes of the user</b> in their physical context.
-            Through contextual inquiry, we were able to <b>understand how our users complete their daily tasks</b> and <b>where frustrations or confusions happen</b>.
-            This allowed us to understand each group of our users in-depth and build work models for each of the participants for the user research study.</p>
-        
-            <p>Because of the scope of the project, we were only able to conduct contextual inquiry on three research participants. To comply with the COVID-19 safety precautions,
-            the research was conducted virtually over video conferencing tools.</p>
+                <section aria-labelledby="data-collection-heading">
+                    <h2 id="data-collection-heading" class="portfolio-section-title"><b>03/</b> Data Collection and Analysis</h2>
+                    <p>In this phase, we analyze the data we collected from context inquiry in couple of ways. First, we performed <b>Affinity Diagramming</b>
+                    to discover hidden patterns in our data. After that, we built work models such as <b>Flow Model, Sequence Model, Artifact Model, Cultural Model & Physical Model.</b></p>
 
-            <p>Two of our participants for the contextual inquiry were <b>teaching assistants</b>, while the other participant was a <b>student</b>.</p>
+                    <h3 class="portfolio-subtitle">Affinity Diagrams - Discovering patterns</h3> <p>After <b>clustering the post-it notes</b>, we <b>rank each category by severity</b>. <b style="color: red;">Red</b> represents categories that caused severe frustrations among the users, while
+                        <b style="color: green">green</b> represents categories that can be addressed if we have extra time.</p>
+                    <img class="portfolio-pic img-rounded-only" style="margin-bottom: 50px" src="images/query/affinity.png" alt="Affinity diagram with clustered notes from contextual inquiry">
 
-            <h2 class="portfolio-section-title"><b>03/</b> Data Collection and Analysis</h2>
-            <p>In this phase, we analyze the data we collected from context inquiry in couple of ways. First, we performed <b>Affinity Diagramming</b>
-            to discover hidden patterns in our data. After that, we built work models such as <b>Flow Model, Sequence Model, Artifact Model, Cultural Model & Physical Model.</b></p>
+                    <h3 class="portfolio-subtitle">Work Models</h3> <h4 class="bold-text">Flow Models</h4> <p>We found out that the flow model of the two instructors are very similar. Hence, we decided to abstract the flow models based on the users' role - student and teaching assistants.</p>
+                    <p>The flow models allowed us to understand the interaction between users of different role in the system and their main task of using the system.</p>
+                    <img class="portfolio-pic img-rounded-only" src="images/query/flow.jpg" alt="Flow model diagrams for student and teaching assistant roles">
 
-            <h4 class="bold-text">Affinity Diagrams - Discovering patterns</h4>
-            <p>After <b>clustering the post-it notes</b>, we <b>rank each category by severity</b>. <b style="color: red;">Red</b> represents categories that caused severe frustrations among the users, while
-                <b style="color: green">green</b> represents categories that can be addressed if we have extra time.</p>
-            <img class="portfolio-pic" style="margin-bottom: 50px" src="images/query/affinity.png">
+                    <h4 class="bold-text">Sequence Models</h4> <p>Since the sequence models for both teaching assistants are similar, we decided to create a congregated sequence model for the role of teaching assistants. </p>
+                    <p>The sequence models allowed us to <b>understand the flow of the users' task</b> based on their role in the system, and <b>at which action or screen does breakdowns or frustrations happen</b>.</p>
+                    <p>We found out that Teaching Assistants use the platform because it is their job to help answer questions in the platform. The follow a systematic way to answer as much questions that were unresolved
+                        as they could to perform their duty.</p>
+                    <img class="portfolio-pic img-rounded-only" style="margin-bottom: 20px" src="images/query/sequence_ta.jpg" alt="Sequence model diagram for teaching assistants">
+                    <p>Due to the very small sample size, we could not say this with high confidence, but we found out that students typically only use the platform when they have specific questions in mind.
+                    They would then proceed to performing actions that answer their doubt. It is less likely that they will participate in answering other's questions.</p>
+                    <img class="portfolio-pic img-rounded-only" src="images/query/sequence_student.jpg" alt="Sequence model diagram for students">
 
-            <h4 class="bold-text">Work Models</h4>           
-            <h5 class="bold-text">Flow Models</h5>
-            <p>We found out that the flow model of the two instructors are very similar. Hence, we decided to abstract the flow models based on the users' role - student and teaching assistants.</p>
-            <p>The flow models allowed us to understand the interaction between users of different role in the system and their main task of using the system.</p>
-            <img class="portfolio-pic" src="images/query/flow.jpg">
+                    <h4 class="bold-text">Artifact Models</h4> <p>The artifact model allowed us to identify which part of the application causes the breakdown or frustrations.</p>
+                    <img class="portfolio-pic img-rounded-only" src="images/query/artifact.png" alt="Artifact model showing interactions with UI elements">
 
-            <h5 class="bold-text">Sequence Models</h5>
-            <p>Since the sequence models for both teaching assistants are similar, we decided to create a congregated sequence model for the role of teaching assistants. </p>
-            <p>The sequence models allowed us to <b>understand the flow of the users' task</b> based on their role in the system, and <b>at which action or screen does breakdowns or frustrations happen</b>.</p>
+                    <h4 class="bold-text">Physical & Cultural Models</h4> <p>We drew out the physical and cultural models for each of our participants. However, We found that they did not provide us any useful information.</p>
+                </section>
 
-            <p>We found out that Teaching Assistants use the platform because it is their job to help answer questions in the platform. The follow a systematic way to answer as much questions that were unresolved
-                as they could to perform their duty.</p>
-            <img class="portfolio-pic" style="margin-bottom: 20px" src="images/query/sequence_ta.jpg">
+                <section aria-labelledby="key-findings-heading">
+                    <h2 id="key-findings-heading" class="portfolio-section-title"><b>04/</b> Key Findings</h2>
+                    <p><b>1. Cluttered UI: </b>Most of the frustrations happen because of the cluttered UI within the platform. There were a lot of irrelevant or less-used functions. Some features were hidden and the users
+                    were unaware of their existence. For example, the job and networking feature were never used by any of our research participants in their daily job and the home page were ignored by the participants. <br>
+                    <b>2. Confusing features: </b>A fair amount of frustrations happened because the users were unsure about what certain buttons or features do. For example, one of our participants was unaware whether drafts
+                    would be saved. <br>
+                    <b>3. Too much context switches: </b> We also found out that a lot of times because searching, browsing, and cross-referencing happens a lot in the platform, the platform did not offer an easy way for users
+                    to easily navigate between several posts easily. <br>
+                    <b>4. Poor search and post organization: </b> The pre-existing "tags" are based on course logistics (such as homeworks, exams) rather than course topics. This made it difficult for students to search for a
+                    specific topic or question they are looking for. Coupled with the inability to sort based on topics, students tend to create posts of which the questions were already asked by their peers.
+                    </p>
+                </section>
 
-            <p>Due to the very small sample size, we could not say this with high confidence, but we found out that students typically only use the platform when they have specific questions in mind.
-            They would then proceed to performing actions that answer their doubt. It is less likely that they will participate in answering other's questions.</p>
-            <img class="portfolio-pic" src="images/query/sequence_student.jpg">
+                <section aria-labelledby="ideation-heading">
+                    <h2 id="ideation-heading" class="portfolio-section-title"><b>05/</b> Ideation</h2>
+                    <h3 class="portfolio-subtitle">Storyboard</h3> <p>First, the user got confused about the course concept. Then they went to the platform and tried to search for similar questions
+                        but could not found any similar questions. Hence, the user crafted a new post and went back to
+                        study while waiting for the responses. When someone responded to the post, they received a
+                        notification on their phone. The user returned to the platform, and saw that their problems were finally resolved.</p> <img class="portfolio-pic img-rounded-only" src="images/query/storyboard.png" alt="Storyboard illustrating a user's journey asking a question on the platform">
 
-            <h5 class="bold-text">Artifact Models</h5>
-            <p>The artifact model allowed us to identify which part of the application causes the breakdown or frustrations.</p>
-            <img class="portfolio-pic" src="images/query/artifact.png">
+                    <h3 class="portfolio-subtitle">Lo-fi prototypes</h3> <img class="portfolio-pic img-rounded-only" src="images/query/lofi-3.png" alt="Low fidelity wireframe showing main Query interface layout">
+                    <p>
+                        <b>The problem: </b> Cluttered UI <br>
+                        <b>The solution: </b> Refreshed the user interface for a more modern look, and only include features that were frequently used by the users. <br>
+                        Most notably, we created a navigation bar on the right
+                        to provide easy access to crucial features of the platform: <br>
+                        <b>1. Search: </b> Since search is so heavily used regardless of the user's role, we think it is beneficial for them to access search regardless of where they are. <br>
+                        <b>2. Notifications: </b> Previously, when an instructor respond to a question or when a student posted a follow up question, users have to either opt in for email notifications (which leads to email spam)
+                        or constantly check the platform for updates. With a notification system built in, students does not have to constantly refresh the platform in order to receive the latest update about the status of their posts.
+                        This ensures students can receive updates about their questions and doubts, and ensure that instructors would not accidentally miss out on follow up questions asked by students.
+                    </p>
 
-            <h5 class="bold-text">Physical & Cultural Models</h5>
-            <p>We drew out the physical and cultural models for each of our participants. However, We found that they did not provide us any useful information.</p>
+                    <img class="portfolio-pic img-rounded-only" src="images/query/lofi-1.png" alt="Low fidelity wireframe showing Query search interface with tag suggestions">
+                    <p>
+                        <b>The problem: </b> Poor search experience<br>
+                        <b>The solution: </b> We plan to incorporate a more <b>contextual tags</b>. When a user create a new post, the platform will <b>generate tags suggestions</b> based on the context of the post. When another user is
+                        searching, <b>trending tags and related tags will be suggested</b> to the user, allowing them to find the post they intended easier.
+                    </p>
 
+                    <img class="portfolio-pic img-rounded-only" src="images/query/lofi-2.png" alt="Low fidelity wireframe showing Query tabbed interface for posts">
+                    <p>
+                        <b>The problem: </b> Too much context switch, making cross referencing hard.<br>
+                        <b>The solution: </b> We plan to introduce <b>tabs</b> to the platform. This creates a centralized workplace for users to open multiple posts at the same time. Previously, when the user click on a post, they will
+                        be redirected to the post they just clicked at, and there is no easily way to navigate back to the previous post except for the "back" function. With the tab feature, the user can choose to open a post in a new tab
+                        so they can avoid losing their current context. <br>
+                    </p>
 
-            <h2 class="portfolio-section-title"><b>04/</b> Key Findings</h2>
-            <p><b>1. Cluttered UI: </b>Most of the frustrations happen because of the cluttered UI within the platform. There were a lot of irrelavent or less-used functions. Some features were hidden and the users
-            were unaware of their existence. For example, the job and networking feature were never used by any of our research participants in their daily job and the home page were ignored by the participants. <br>
-            <b>2. Confusing features: </b>A fair amount of frustrations happened because the users were unsure about what certain buttons or features do. For example, one of our participants was unaware whether drafts 
-            would be saved. <br>
-            <b>3. Too much context switches: </b> We also found out that a lot of times because searching, browsing, and cross-referencing happens a lot in the platform, the platform did not offer an easy way for users 
-            to easily navigate between several posts easily. <br>
-            <b>4. Poor search and post organization: </b> The pre-existing "tags" are based on course logistics (such as homeworks, exams) rather than course topics. This made it difficult for students to search for a
-            specific topic or question they are looking for. Coupled with the inability to sort based on topics, students tend to create posts of which the questions were already asked by their peers.
-            
-            </p>
+                    <p><b>Even less cluttered UI: </b>We plan to remove all unneccesary features and buttons that were not part of the user's core task and goals.</p>
 
-            <h2 class="portfolio-section-title"><b>05/</b> Ideation</h2>
-            <h4 class="bold-text">Storyboard</h4>
-            <p>First, the user got confused about the course concept. Then they went to the platform and tried to search for similar questions
-                but could not found any similar questions. Hence, the user crafted a new post and went back to
-                study while waiting for the responses. When someone responded to the post, they received a
-                notification on their phone. The user returned to the platform, and saw that their problems were finally resolved.</p>
-            <img class="portfolio-pic" src="images/query/storyboard.png">
+                    <h3 class="portfolio-subtitle">Hi-fi prototypes</h3> <img class="portfolio-pic img-rounded-only" src="images/query/color.png" alt="Color palette defined for the Query app redesign">
+                    <p>To create a consistent experience, we have define the three main color scheme in our interface, each represent a specific meaning in the interface.</p>
 
-            <h4 class="bold-text">Lo-fi prototypes</h4>
-            <img class="portfolio-pic" src="images/query/lofi-3.png">
-            <p>
-                <b>The problem: </b> Cluttered UI <br>
-                <b>The solution: </b> Refreshed the user interface for a more modern look, and only include features that were frequently used by the users. <br>
-                Most notably, we created a navigation bar on the right 
-                to provide easy access to crucial features of the platform: <br>
-                <b>1. Search: </b> Since search is so heavily used regardless of the user's role, we think it is beneficial for them to access search regardless of where they are. <br>
-                <b>2. Notifications: </b> Previously, when an instructor respond to a question or when a student posted a follow up question, users have to either opt in for email notifications (which leads to email spam)
-                or constantly check the platform for updates. With a notification system built in, students does not have to constantly refresh the platform in order to receive the latest update about the status of their posts.
-                This ensures students can receive updates about their questions and doubts, and ensure that instructors would not accidentally miss out on follow up questions asked by students.
-            </p>
-            
-            <img class="portfolio-pic" src="images/query/lofi-1.png">
-            <p>
-                <b>The problem: </b> Poor search experience<br>
-                <b>The solution: </b> We plan to incorporate a more <b>contextual tags</b>. When a user create a new post, the platform will <b>generate tags suggestions</b> based on the context of the post. When another user is
-                searching, <b>trending tags and related tags will be suggested</b> to the user, allowing them to find the post they intended easier.
-            </p>
+                    <h4 class="bold-text">Home screen - overview, classes, trending posts</h4> <img class="portfolio-pic img-rounded-only" src="images/query/hifi-1.png" alt="High fidelity mockup of the Query home screen">
+                    <p>In the old implementation, there's no home screen. The home screen <b>provides an overview</b> for the user's classes. This includes <b>number of unread, unanswered, and unresolved posts</b>
+                    across all classes that the user is enrolled in for the semester. It also shows <b>all the classes the user is enrolled in</b>, so they can quickly access the class they intended to.
+                    Finally, it also shows some <b>trending posts</b> that the user might not want to miss out on.</p>
 
-            <img class="portfolio-pic" src="images/query/lofi-2.png">
-            <p>
-                <b>The problem: </b> Too much context switch, making cross referencing hard.<br>
-                <b>The solution: </b> We plan to introduce <b>tabs</b> to the platform. This creates a centralized workplace for users to open multiple posts at the same time. Previously, when the user click on a post, they will
-                be redirected to the post they just clicked at, and there is no easily way to navigate back to the previous post except for the "back" function. With the tab feature, the user can choose to open a post in a new tab
-                so they can avoid losing their current context. <br>
-            </p>
+                    <h4 class="bold-text">Enrolling made easier</h4> <img class="portfolio-pic img-rounded-only" src="images/query/hifi-onboarding.png" alt="High fidelity mockup of the Query course enrollment and notification settings screen">
+                    <p>One of the flaws of the old implementation, revealed in the contextual inquiry, is that <b>users have to explicitly go to the settings to change the notification settings</b> of a class. Because of its' hidden nature, users
+                    might not know that they have the ability to change the notifications. Hence in the redesigned enrolling system, we change it into a <b>step-wise onboarding experience</b>, and making sure that they explicitly choose the notifications
+                    preference they want for each course.</p>
 
-            <p><b>Even less cluttered UI: </b>We plan to remove all unneccesary features and buttons that were not part of the user's core task and goals.</p>
+                    <h4 class="bold-text">Class Overview - Clearer indicators and more useful information</h4> <img class="portfolio-pic img-rounded-only" src="images/query/hifi-class-overview.png" alt="High fidelity mockup of the Query class overview screen">
+                    <p>The class overview page is minimally refreshed. Instead of three red exclaimation mark on the old interface, we <b>utilized the three defined color scheme to differentiate these categories</b>.
+                        This allowed users to be able to read the correct information easier without having to read the textual information of the category. In addition, the "jobs" feature is completely removed
+                        from our implementation. Instead, we <b>replace the jobs feature with trending post of the current class</b>. These changes are consistent with the home screen.</p>
 
-            <h4 class="bold-text">Hi-fi prototypes</h4>
+                    <h4 class="bold-text">Posts and Search - Minor refresh</h4> <img class="portfolio-pic img-rounded-only" src="images/query/hifi-post.png" alt="High fidelity mockup of the Query post viewing and search interface">
+                    <p>We employ the <b>if not broken, don't change</b> philosophy here. The <b>Master-Detail layout</b> works perfect. Furthermore, the indicator on the left whether an instructor has answered, or if
+                    the post is unanswered or unresolved is something our research participant used extensively during their browsing process. Hence, we plan to keep these with a minor refresh to the looks.
+                    Utilizing the same <b>3-color scheme</b> we defined earlier, the user can <b>know the status of the post by looking at the color</b> of the post. In addition, we plan to <b>include tags so that user
+                    could know the topic of the post</b>  before clicking into them.</p>
+                    <p>To support the user's need of cross-referencing, we incorporate a <b>tab feature</b>, so the user does not have to lose context of their current work or the post they are looking at.</p>
+                    <p>On the post itself, we did changes in the layout. In the old implementation, responses are split into instructor's response, student's response, and follow-ups. It was a wiki-style board that any
+                        students can change the student response and any instructor can change the instructor's response. The problem is <b>it is hard to keep track of changes made to the student's response</b> and
+                    <b>replies could not be made on the responses</b>. Therefore, we believe a typical <b>forum-style</b> layout would make more sense, with the instructor-endorsed or most upvoted response being on top
+                    of other responses. Furthermore, students can identify an instructor with the blue checkmark on their profile picture.</p>
+                    <p><b>Related posts</b> are also provided at the bottom of the post if students were still confused about the course topics and would like to explore similar post.</p>
+                    <p>We also moved all <b>actionable buttons</b> to the bottom of all responses. Previously, these buttons were not grouped together, making it difficult for users to know what features were available to them.</p>
 
-            <img class="portfolio-pic" src="images/query/color.png">
-            <p>To create a consistent experience, we have define the three main color scheme in our interface, each represent a specific meaning in the interface.</p>
+                    <h4 class="bold-text">Class Sidebar</h4> <img class="portfolio-pic img-rounded-only" src="images/query/hifi-notifications.png" alt="High fidelity mockup of the Query class sidebar showing notifications">
+                    <p>Previously, the user has to select a class before they can see any further information about the class. We plan to incorporate a <b>class sidebar</b> that provides a more in-depth overview of each classes.
+                    The user has <b>quick and easy access to unread/unanswered/unresolved posts</b> whereever they are.</p>
 
-            <h5 class="bold-text">Home screen - overview, classes, trending posts</h5>
-            <img class="portfolio-pic rounded-corners" src="images/query/hifi-1.png">
-            <p>In the old implementation, there's no home screen. The home screen <b>provides an overview</b> for the user's classes. This includes <b>number of unread, unanswered, and unresolved posts</b>
-            across all classes that the user is enrolled in for the semester. It also shows <b>all the classes the user is enrolled in</b>, so they can quickly access the class they intended to.
-            Finally, it also shows some <b>trending posts</b> that the user might not want to miss out on.</p>
+                    <h4 class="bold-text">Rich format links</h4> <img class="portfolio-pic img-rounded-only" src="images/query/hifi-link.png" alt="High fidelity mockup showing rich link previews in Query posts">
+                    <p><b>The problem: </b>To link to another post, users have to use the three-digit identifier of the post. The id number provides no context of the post. <br>
+                    <b>The solution: </b>When the user paste it on the platform, we plan to generate a rich format visual to provide context to the post.</p>
+                </section>
 
-            <h5 class="bold-text">Enrolling made easier</h5>
-            <img class="portfolio-pic" src="images/query/hifi-onboarding.png">
-            <p>One of the flaws of the old implementation, revealed in the contextual inquiry, is that <b>users have to explicitly go to the settings to change the notification settings</b> of a class. Because of its' hidden nature, users
-            might not know that they have the ability to change the notifications. Hence in the redesigned enrolling system, we change it into a <b>step-wise onboarding experience</b>, and making sure that they explicitly choose the notifications
-            preference they want for each course.</p>
-            <!-- <p><b>The problem: </b> notifications settings are set to default, and users were not aware of ways to change it. <br>
-            <b>The solution: </b>Refresh the enrollment UI to a step-wise process, with the user having the ability to set crucial settings and preferences during enrollment.</p> -->
+                <section aria-labelledby="evaluation-heading">
+                    <h2 id="evaluation-heading" class="portfolio-section-title"><b>06/</b> Usability Testing</h2>
+                    <p>Now comes to most important part of the ideation process - testing! We performed the usabillity test with three participants with three <b>different scenarios of varying difficulty</b> using the hi-fi Figma interactive
+                        prototypes. For each scenario, we measured:
 
-            <h5 class="bold-text">Class Overview - Clearer indicators and more useful information</h5>
-            <img class="portfolio-pic" src="images/query/hifi-class-overview.png">
-            <p>The class overview page is minimally refreshed. Instead of three red exclaimation mark on the old interface, we <b>utilized the three defined color scheme to differentiate these categories</b>.
-                This allowed users to be able to read the correct information easier without having to read the textual information of the category. In addition, the "jobs" feature is completely removed 
-                from our implementation. Instead, we <b>replace the jobs feature with trending post of the current class</b>. These changes are consistent with the home screen.</p>
+                        <ol>
+                            <li>Number of times participants get frustrated or confused</li>
+                            <li>Task completion rate</li>
+                        </ol>
 
-            <h5 class="bold-text">Posts and Search - Minor refresh</h5>
-            <img class="portfolio-pic" src="images/query/hifi-post.png">
-            <p>We employ the <b>if not broken, don't change</b> philosophy here. The <b>Master-Detail layout</b> works perfect. Furthermore, the indicator on the left whether an instructor has answered, or if
-            the post is unanswered or unresolved is something our research participant used extensively during their browsing process. Hence, we plan to keep these with a minor refresh to the looks.
-            Utilizing the same <b>3-color scheme</b> we defined earlier, the user can <b>know the status of the post by looking at the color</b> of the post. In addition, we plan to <b>include tags so that user 
-            could know the topic of the post</b>  before clicking into them.</p>
-            <p>To support the user's need of cross-referencing, we incorporate a <b>tab feature</b>, so the user does not have to lose context of their current work or the post they are looking at.</p> 
-            <p>On the post itself, we did changes in the layout. In the old implementation, responses are split into instructor's response, student's response, and follow-ups. It was a wiki-style board that any
-                students can change the student response and any instructor can change the instructor's response. The problem is <b>it is hard to keep track of changes made to the student's response</b> and
-            <b>replies could not be made on the responses</b>. Therefore, we believe a typical <b>forum-style</b> layout would make more sense, with the instructor-endorsed or most upvoted response being on top
-            of other responses. Furthermore, students can identify an instructor with the blue checkmark on their profile picture.</p>
-            <p><b>Related posts</b> are also provided at the bottom of the post if students were still confused about the course topics and would like to explore similar post.</p>
-            <p>We also moved all <b>actionable buttons</b> to the bottom of all responses. Previously, these buttons were not grouped together, making it difficult for users to know what features were available to them.</p>
+                        We then use the <b>SUS Usability Metrics</b> to measure the usability of our design solution.
+                    </p>
 
-            <h5 class="bold-text">Class Sidebar</h5>
-            <img class="portfolio-pic rounded-corners" src="images/query/hifi-notifications.png">     
-            <p>Previously, the user has to select a class before they can see any further information about the class. We plan to incorporate a <b>class sidebar</b> that provides a more in-depth overview of each classes.
-            The user has <b>quick and easy access to unread/unanswered/unresolved posts</b> whereever they are.</p>
+                    <p>The usability testing is a nerve-racking process for our team as we figure out whether our design solution did address the problems we identified from the original design solution.</p>
 
-            <h5 class="bold-text">Rich format links</h5>
-            <img class="portfolio-pic" src="images/query/hifi-link.png">
-            <p><b>The problem: </b>To link to another post, users have to use the three-digit identifier of the post. The id number provides no context of the post. <br>
-            <b>The solution: </b>When the user paste it on the platform, we plan to generate a rich format visual to provide context to the post.</p>
+                    <h3 class="portfolio-subtitle">Results and Findings</h3> <p>We plot out graphs to visualize the metrics we collected in our usability testing. The plots are broken down to subtasks of scenarios.</p>
+                    <img class="portfolio-pic img-rounded-only" src="images/query/usability-1.png" alt="Graph showing usability testing results - Frustration/Confusion Count">
+                    <img class="portfolio-pic img-rounded-only" src="images/query/usability-2.png" alt="Graph showing usability testing results - Task Completion Rate">
+                    <p>The average <b>SUS Usability Score</b> we collected is <b>79</b>, which is a higher than average score.</p>
 
-            <h2 class="portfolio-section-title"><b>06/</b> Usability Testing</h2>
-            <p>Now comes to most important part of the ideation process - testing! We performed the usabillity test with three participants with three <b>different scenarios of varying difficulty</b> using the hi-fi Figma interactive 
-                prototypes. For each scenario, we measured:
-                
-                <ol>
-                    <li>Number of times participants get frustrated or confused</li>
-                    <li>Task completion rate</li>
-                </ol>
-                
-                We then use the <b>SUS Usability Metrics</b> to measure the usability of our design solution.
-            </p>
+                    <p>At a higher level, it seems that the success rate of tasks for the design solution is high, but with some confusions. This might be caused by the fact that the users are interacting with
+                    an application they were not familiar with. Further tests with learnability metrics have to be conducted before that assumption could be made.</p>
 
-            <p>The usability testing is a nerve-racking process for our team as we figure out whether our design solution did address the problems we identified from the original design solution.</p>
-            
-            <h4 class="bold-text">Results and Findings</h4>
-            <p>We plot out graphs to visualize the metrics we collected in our usability testing. The plots are broken down to subtasks of scenarios.</p>
-            <img class="portfolio-pic" src="images/query/usability-1.png">
-            <img class="portfolio-pic" src="images/query/usability-2.png">
-            <p>The average <b>SUS Usability Score</b> we collected is <b>79</b>, which is a higher than average score.</p>
+                    <p>In particular, the tasks - <b>searching posts and opening in a new tab</b>, <b>search and find a post</b>, and <b>find bookmarked posts</b> were the tasks with higher confusion rate and
+                    lower success rate.</p>
 
-            <p>At a higher level, it seems that the success rate of tasks for the design solution is high, but with some confusions. This might be caused by the fact that the users are interacting with
-            an application they were not familiar with. Further tests with learnability metrics have to be conducted before that assumption could be made.</p>
+                    <p>Since the confusion rates are particularly high, we asked our participants the reasons those concerns or confusions happen. The reasons are:
+                        <ol>
+                            <li>On the <b>Home page</b>, <b>color coding the classes</b>, which is correlated to the trending post is <b>not obvious at first glance</b> and <b>takes unneccesary time to cross reference</b> the colors,
+                            and the <b>too colorful UI</b> is exerting stress to their eyes.</li>
+                            <li>The<b> search feature was confusing</b> because the participants weren't sure whether they are searching within the current classes or all of the classes they were enrolled in.</li>
+                        </ol>
+                    </p>
 
-            <p>In particular, the tasks - <b>searching posts and opening in a new tab</b>, <b>search and find a post</b>, and <b>find bookmarked posts</b> were the tasks with higher confusion rate and
-            lower success rate.</p>
+                    <h3 class="portfolio-subtitle">Making changes</h3> <img class="portfolio-pic img-rounded-only" src="images/query/change-1.png" alt="Mockup showing changes made after usability testing - Home screen adjustments">
+                    <p><b>The problem: </b>Classes card are too color heavy and meaning of color cannot be inferred directly.<br>
+                    <b>The solution: </b>Remove colors, and use traditional text. <br>
+                    <b>Bonus changes: </b>Include popular response on trending post to provide more infomation at a glance.</p>
 
-            <p>Since the confusion rates are particularly high, we asked our participants the reasons those concerns or confusions happen. The reasons are: 
-                <ol>
-                    <li>On the <b>Home page</b>, <b>color coding the classes</b>, which is correlated to the trending post is <b>not obvious at first glance</b> and <b>takes unneccesary time to cross reference</b> the colors, 
-                    and the <b>too colorful UI</b> is exerting stress to their eyes.</li>
-                    <li>The<b> search feature was confusing</b> because the participants weren't sure whether they are searching within the current classes or all of the classes they were enrolled in.</li>
-                </ol>
-            </p>
+                    <img class="portfolio-pic img-rounded-only" src="images/query/change-2.png" alt="Mockup showing changes made after usability testing - Search and post adjustments">
+                    <p><b>The problem: </b>Search scope was unclear.<br>
+                    <b>The solution: </b>Clearly communicate out the scope of the search. <br>
+                    <b>Bonus changes: </b><b>Remove bookmark and share of responses</b> because responses does not provide any meaning without the post. Also
+                    included the <b>like count</b> for better communication.</p>
+                </section>
 
-            <h4 class="bold-text">Making changes</h4>
-            <img class="portfolio-pic" src="images/query/change-1.png">
-            <p><b>The problem: </b>Classes card are too color heavy and meaning of color cannot be inferred directly.<br>
-            <b>The solution: </b>Remove colors, and use traditional text. <br>
-            <b>Bonus changes: </b>Include popular response on trending post to provide more infomation at a glance.</p>
+                <section aria-labelledby="conclusion-heading">
+                    <h2 id="conclusion-heading" class="portfolio-section-title"><b>07/</b> Conclusion and Reflections</h2>
+                    <p>This is a very challenging project for our team as it is our first user experience case study. Here's the main takeaway from the project.</p>
 
-            <img class="portfolio-pic" src="images/query/change-2.png">
-            <p><b>The problem: </b>Search scope was unclear.<br>
-            <b>The solution: </b>Clearly communicate out the scope of the search. <br>
-            <b>Bonus changes: </b><b>Remove bookmark and share of responses</b> because responses does not provide any meaning without the post. Also 
-            included the <b>like count</b> for better communication.</p>
+                    <h4 class="bold-text">Our mistakes</h4> <p>Due to our inexperience, the <b>usability testing did not ran as smoothly as we imagined</b>. The metrics we chose are not the best reflection
+                    of the usability of the system. Other metrics such as learnability should be taken into consideration. The instructions given to usability testing
+                    participants were also lack clarity, causing some confusions, which pollute the data we collected.</p>
 
-            <h2 class="portfolio-section-title"><b>07/</b> Conclusion and Reflections</h2>
-            <p>This is a very challenging project for our team as it is our first user experience case study. Here's the main takeaway from the project.</p>
+                    <p>Our <b>users were naiively defined</b>. We defined our users based on their role in the system, but it would be better if we define our users
+                    by <b>creating personas</b>.</p>
 
-            <h5 class="bold-text">Our mistakes</h5>
-            <p>Due to our inexperience, the <b>usability testing did not ran as smoothly as we imagined</b>. The metrics we chose are not the best reflection 
-            of the usability of the system. Other metrics such as learnability should be taken into consideration. The instructions given to usability testing 
-            participants were also lack clarity, causing some confusions, which pollute the data we collected.</p>
+                    <h4 class="bold-text">What we hope to do differently</h4> <p>Due to COVID-19 restrictions, the contextual inquiry and usability testing were performed virtually. We hope to have the opportunity to perform
+                    <b>onsite contextual inquiry and usability testing</b> as we believe that we can better our participants.</p>
 
-            <p>Our <b>users were naiively defined</b>. We defined our users based on their role in the system, but it would be better if we define our users 
-            by <b>creating personas</b>.</p>
+                    <p>Due to the time constraint of the project, we could only perform contextual inquiry and usability testing on three participants each. If we had
+                        more time and resources, increasing the participants in both the contextual inquiry and usability can reflect the usability of the system better
+                        as we could detect outliers.
+                    </p>
+                </section>
 
-            <h5 class="bold-text">What we hope to do differently</h5>
-            <p>Due to COVID-19 restrictions, the contextual inquiry and usability testing were performed virtually. We hope to have the opportunity to perform 
-            <b>onsite contextual inquiry and usability testing</b> as we believe that we can better our participants.</p>
-
-            <p>Due to the time constraint of the project, we could only perform contextual inquiry and usability testing on three participants each. If we had
-                more time and resources, increasing the participants in both the contextual inquiry and usability can reflect the usability of the system better
-                as we could detect outliers.
-            </p>
-
-        </div>
-
-        <div class="section-header" id="contact">
-            <h1 class="fade">Connect with me!<br>👋👋👋</h1>
-            <br>
-            <div class="d-flex align-items-center justify-content-center">
-                <h5 id="contact-desc">Open to any job and collaboration opportunies, or even a coffee chat! Feel free to connect with me with any of the options below.</h5>		
+            </div> <section class="contact-section" id="contact">
+                <div class="section-header">
+                    <h2 class="fade">Connect with me!<br>👋👋👋</h2>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p id="contact-desc">Open to any job and collaboration opportunities, or even a coffee chat! Feel free to connect with me with any of the options below.</p>
+                    </div>
+                </div>
+                <div class="contact-bar">
+                     <div class="expand-icon">
+                        <a href="mailto:sgoh4@wisc.edu" target="_blank">
+                            <img class="contact-icon" src="images/icons/mail-142.svg" alt="Email">
+                            <span class="link-text">sgoh4@wisc.edu</span>
+                        </a>
+                    </div>
+                    <div class="expand-icon">
+                        <a href="https://www.linkedin.com/in/sunandagoh/" target="_blank">
+                            <img class="contact-icon" src="images/icons/linkedin.svg" alt="LinkedIn">
+                            <span class="link-text">Sunanda Xi Yue Goh</span>
+                        </a>
+                    </div>
+                    <div class="expand-icon">
+                        <a href="https://github.com/su-goh" target="_blank">
+                            <img class="contact-icon" src="images/icons/github-logo.svg" alt="GitHub">
+                            <span class="link-text">Github su-goh</span>
+                        </a>
+                    </div>
+                </div>
+            </section> </main> <footer class="footer">
+            <div class="footer-lic">
+                <a href="https://icons8.com/" target="_blank" rel="noopener noreferrer"><b>Icons by Icons8</b></a>
             </div>
-        </div>
-    
-        <div class="contact-bar">
-            <div class="expand-icon">
-                <a href="mailto:sgoh4@wisc.edu" target="_blank">
-                    <img class="contact-icon" src="images/icons/mail-142.svg">
-                </a>
-                <a href="mailto:sgoh4@wisc.edu" target="_blank">sgoh4@wisc.edu</a>
+            <div class="footer-lic">
+                <a href="./license.html"><b>Credits</b></a>
             </div>
-            <div class="expand-icon">
-                <a href="https://www.linkedin.com/in/sunandagoh/" target="_blank">
-                    <img class="contact-icon" src="images/icons/linkedin.svg">
-                </a>
-                <a href="https://www.linkedin.com/in/sunandagoh/" target="_blank">Sunanda Xi Yue Goh</a>
-            </div>
-            <div class="expand-icon">
-                <a href="https://github.com/su-goh" target="_blank">
-                    <img class="contact-icon" src="images/icons/github-logo.svg">
-                </a>
-                <a href="https://github.com/su-goh" target="_blank">Github su-goh</a>
-            </div class="expand-icon">
-        </div>
-    </body>
+        </footer> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+      </body>
+</html>
