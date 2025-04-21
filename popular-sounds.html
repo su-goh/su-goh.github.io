@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Music Artist Badges on Shorts - Sunanda</title> <meta charset="utf-8">
+        <title>Popular Shorts Sounds Shelf - Sunanda</title> <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Project detailing the implementation of Official Artist Channel verified badges on YouTube Shorts surfaces to enhance artist visibility and user trust.">
+        <meta name="description" content="Project detailing the design and algorithm development for a shelf showcasing an artist's top trending tracks from YouTube Shorts on their Official Artist Channel.">
         <meta name="robots" content="noindex">
 
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -31,7 +31,7 @@
                     </button>
                     <ul id="menu-list">
                         <li><a href="./index.html#about">About Me</a></li>
-                        <li><a href="./index.html#youtube-project">YouTube</a></li>
+                        <li><a href="./index.html#youtube-projects">YouTube</a></li>
                         <li><a href="./index.html#portfolio">Portfolio</a></li>
                         <li><a href="./index.html#contact">Contact</a></li>
                     </ul>
@@ -47,9 +47,9 @@
 
         <main>
             <section aria-labelledby="page-title" class="portfolio-headings">
-                <h1 id="page-title" class="portfolio-title">Music Artist Badges on Shorts</h1>
-                <h5 style="margin-bottom: 50px">Extending verified badge of music artists on Shorts surfaces</h5>
-                <img class="rounded-corners portfolio-main-img" src="images/oac_badge.png" alt="Comparison showing YouTube Shorts player with and without the music artist verified badge.">
+                <h1 id="page-title" class="portfolio-title">Popular Sounds from Shorts Shelf</h1>
+                <h5 style="margin-bottom: 50px">Highlighting artists' trending Shorts tracks on their Official Artist Channel</h5>
+                <img class="rounded-corners portfolio-main-img" src="/images/popular_sounds_thumbnail.png" alt="Popular Sounds on Shorts shelf feature mockup">
             </section>
 
             <div class="portfolio-body">
@@ -57,42 +57,28 @@
                 <section aria-labelledby="overview-heading">
                     <h2 id="overview-heading" class="portfolio-section-title">Overview</h2>
                     <p>
-                        As YouTube Shorts continues to grow as a major platform for music discovery, ensuring consistent artist identification becomes crucial.
-                        Official Artist Channels (OACs) provide verified status for artists across YouTube, but this verification wasn't initially present on key Shorts surfaces.
-                        This project aimed to bridge that gap by extending the familiar music note verified badge to the Shorts player and related pages.
+                        YouTube Shorts has become a significant driver of music trends and discovery. To better connect this ecosystem with artists' main presence, this project introduced a new dedicated shelf on Official Artist Channels (OACs).
                     </p>
                     <p>
-                        The goal was to enhance user trust, improve artist discoverability within the Shorts ecosystem, and maintain consistent artist branding across the YouTube platform for viewers, artists, and creators.
+                        This shelf dynamically ranks and showcases an artist's tracks that are currently popular or trending within the Shorts platform. The primary goals were to increase the discoverability of trending sounds, provide artists with insights into their Shorts performance, and create a stronger link between Shorts engagement and the artist's channel.
                     </p>
                 </section>
 
-                <section aria-labelledby="solution-heading">
-                    <h2 id="solution-heading" class="portfolio-section-title">Details</h2>
+                <section aria-labelledby="details-heading">
+                    <h2 id="details-heading" class="portfolio-section-title">Details</h2>
                     <p>
-                        I integrated the existing OAC verification status into key Shorts UI components:
+                        The core deliverable was a new, algorithmically driven shelf displayed prominently on an artist's OAC. Key aspects included:
                     </p>
-                    <div class="center-img">
-                        <img class="portfolio-pic img-rounded-only" src="images/badge_mocks.png" alt="Mocks of the Shorts player and music pivot page showing the verified badge">
-                     </div>
-                    <ol>
-                        <li>
-                            <b>Shorts Player Badge:</b> Displaying the music note verified badge directly next to the artist's channel name on the Shorts player interface when watching a Short created by an OAC.
-                        </li>
-                        <li>
-                            <b>Music Pivot Page Badge:</b> Adding the verified badge next to the artist's channel handle in the header of the music pivot page (the page showing details about the sound used in a Short).
-                        </li>
-                    </ol>
-                    <p>
-                        This required ensuring the verification status was correctly fetched and displayed based on the channel information associated with the Short or the sound.
-                    </p>
+                    <ul>
+                        <li><b>Dynamic Ranking:</b> The shelf automatically updates to reflect the tracks gaining the most traction within Shorts creations and viewership.</li>
+                        <li><b>Algorithm Development:</b> I focused specifically on designing and implementing the ranking algorithm.</li>
+                    </ul>
                 </section>
 
                 <section aria-labelledby="conclusion-heading">
-                    <h2 id="conclusion-heading" class="portfolio-section-title">Conclusion</h2> <p>
-                        Extending the OAC verified badge to Shorts surfaces provides a more consistent and trustworthy experience for viewers interacting with artist content. It reinforces artist identity within the Shorts ecosystem and aids music discovery by clearly highlighting official sources.
-                    </p>
+                    <h2 id="conclusion-heading" class="portfolio-section-title">Conclusion</h2>
                     <p>
-                        This project highlighted the importance of maintaining consistent platform-wide signals (like verification) across new and rapidly evolving features like Shorts to benefit all user groups – viewers, creators, and artists.
+                        The Popular Sounds on Shorts shelf provides a valuable connection point between the short-form video ecosystem and the artist's primary channel. By surfacing trending tracks algorithmically, it enhances music discovery for fans and offers artists a way to capitalize on their Shorts momentum.
                     </p>
                 </section>
 
