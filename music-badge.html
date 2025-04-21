@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Music Artist Badges on Shorts - Sunanda</title> <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Project detailing the implementation of Official Artist Channel verified badges on YouTube Shorts surfaces to enhance artist visibility and user trust.">
+        <meta name="robots" content="noindex">
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script/script.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPZRY4D8M0"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-YPZRY4D8M0');
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="./index.html" id="nav-logo"><b>Sunanda's Portfolio</b></a>
+                <div class="nav-links">
+                    <button class="hbg-menu" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="menu-list">
+                        <img src="./images/icons/hamburger_button_menu_icon_155296.svg" alt="Menu" aria-hidden="true">
+                    </button>
+                    <ul id="menu-list">
+                        <li><a href="./index.html#about">About Me</a></li>
+                        <li><a href="./index.html#youtube-project">YouTube</a></li>
+                        <li><a href="./index.html#portfolio">Portfolio</a></li>
+                        <li><a href="./index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="scroll-indicator">
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
+
+        <main>
+            <section aria-labelledby="page-title" class="portfolio-headings">
+                <h1 id="page-title" class="portfolio-title">Music Artist Badges on Shorts</h1>
+                <h5 style="margin-bottom: 50px">Extending verified badge of music artists on Shorts surfaces</h5>
+                <img class="rounded-corners portfolio-main-img" src="images/oac_badge.png" alt="Comparison showing YouTube Shorts player with and without the music artist verified badge.">
+            </section>
+
+            <div class="portfolio-body">
+
+                <section aria-labelledby="overview-heading">
+                    <h2 id="overview-heading" class="portfolio-section-title">Overview</h2>
+                    <p>
+                        As YouTube Shorts continues to grow as a major platform for music discovery, ensuring consistent artist identification becomes crucial.
+                        Official Artist Channels (OACs) provide verified status for artists across YouTube, but this verification wasn't initially present on key Shorts surfaces.
+                        This project aimed to bridge that gap by extending the familiar music note verified badge to the Shorts player and related pages.
+                    </p>
+                    <p>
+                        The goal was to enhance user trust, improve artist discoverability within the Shorts ecosystem, and maintain consistent artist branding across the YouTube platform for viewers, artists, and creators.
+                    </p>
+                </section>
+
+                <section aria-labelledby="solution-heading">
+                    <h2 id="solution-heading" class="portfolio-section-title">Details</h2>
+                    <p>
+                        I integrated the existing OAC verification status into key Shorts UI components:
+                    </p>
+                    <div class="center-img">
+                        <img class="portfolio-pic img-rounded-only" src="images/badge_mocks.png" alt="Mocks of the Shorts player and music pivot page showing the verified badge">
+                     </div>
+                    <ol>
+                        <li>
+                            <b>Shorts Player Badge:</b> Displaying the music note verified badge directly next to the artist's channel name on the Shorts player interface when watching a Short created by an OAC.
+                        </li>
+                        <li>
+                            <b>Music Pivot Page Badge:</b> Adding the verified badge next to the artist's channel handle in the header of the music pivot page (the page showing details about the sound used in a Short).
+                        </li>
+                    </ol>
+                    <p>
+                        This required ensuring the verification status was correctly fetched and displayed based on the channel information associated with the Short or the sound.
+                    </p>
+                </section>
+
+                <section aria-labelledby="problem-heading">
+                    <h2 id="problem-heading" class="portfolio-section-title">Motivation</h2>
+                    <p>
+                        While OACs were verified elsewhere on YouTube, the Shorts player and the music pivot page (accessed via the sound thumbnail) lacked the verified badge next to artist names or channel handles.
+                        This inconsistency could lead to:
+                    </p>
+                    <ul>
+                        <li>Difficulty for viewers in quickly identifying official content from verified artists within the fast-paced Shorts feed.</li>
+                        <li>Potential confusion between official artist accounts and fan accounts or other creators using the same sound.</li>
+                        <li>Missed opportunities for reinforcing artist branding and credibility on a rapidly growing surface.</li>
+                    </ul>
+                </section>
+
+                <section aria-labelledby="conclusion-heading">
+                    <h2 id="conclusion-heading" class="portfolio-section-title">Conclusion</h2> <p>
+                        Extending the OAC verified badge to Shorts surfaces provides a more consistent and trustworthy experience for viewers interacting with artist content. It reinforces artist identity within the Shorts ecosystem and aids music discovery by clearly highlighting official sources.
+                    </p>
+                    <p>
+                        This project highlighted the importance of maintaining consistent platform-wide signals (like verification) across new and rapidly evolving features like Shorts to benefit all user groups – viewers, creators, and artists.
+                    </p>
+                </section>
+
+            </div> <section class="contact-section" id="contact">
+                <div class="section-header">
+                    <h2 class="fade">Connect with me!<br>👋👋👋</h2>
+                    <br>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p id="contact-desc">Open to any job and collaboration opportunities, or even a coffee chat! Feel free to connect with me with any of the options below.</p>
+                    </div>
+                </div>
+                <div class="contact-bar">
+                     <div class="expand-icon">
+                        <a href="mailto:sgoh4@wisc.edu" target="_blank">
+                            <img class="contact-icon" src="images/icons/mail-142.svg" alt="Email">
+                            <span class="link-text">sgoh4@wisc.edu</span>
+                        </a>
+                    </div>
+                    <div class="expand-icon">
+                        <a href="https://www.linkedin.com/in/sunandagoh/" target="_blank">
+                            <img class="contact-icon" src="images/icons/linkedin.svg" alt="LinkedIn">
+                            <span class="link-text">Sunanda Xi Yue Goh</span>
+                        </a>
+                    </div>
+                    <div class="expand-icon">
+                        <a href="https://github.com/su-goh" target="_blank">
+                            <img class="contact-icon" src="images/icons/github-logo.svg" alt="GitHub">
+                            <span class="link-text">Github su-goh</span>
+                        </a>
+                    </div>
+                </div>
+            </section> </main> <footer class="footer">
+            <div class="footer-lic">
+                <a href="https://icons8.com/" target="_blank" rel="noopener noreferrer"><b>Icons by Icons8</b></a>
+            </div>
+            <div class="footer-lic">
+                <a href="./license.html"><b>Credits</b></a>
+            </div>
+        </footer> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+      </body>
+</html>
